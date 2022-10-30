@@ -1,6 +1,8 @@
 import logging
 from pymongo import MongoClient
 import certifi
+import threading
+from pathlib import Path
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.dispatcher.filters import Text
 from aiogram import Bot, Dispatcher, types
@@ -22,13 +24,19 @@ from aiogram.types import (
 from aiogram.utils.callback_data import CallbackData
 
 TOKEN = "5171613069:AAHen86_3BtQE20RvyL-zWuxQVsGwBTPW0g"
-admin_chat_id = -1001624700219
+admin_chat_id = -1001641770664
 admins_id = [5557202913]
 
 cluster = MongoClient("mongodb+srv://nickework:nickework223@cluster0.ig5au4d.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
 
 db = cluster['Guide1']
 workers = db['workers']
+
+def f():
+  threading.Timer(20.0, f).start()  # Перезапуск через 5 секунд
+  print("This Is Worked!")
+
+f()
 
 # Создаём бота
 bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
@@ -50,22 +58,23 @@ reg_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
 reg_keyboard.add(reg_button, reger_button, info_button, price_button, works_button)
 
 site_button_card_one = KeyboardButton("Лендинг")
-site_button_card_two = KeyboardButton("Фишинг")
-site_button_card_three = KeyboardButton("Криптоскам")
-site_button_card_four = KeyboardButton("Криптофишинг")
-site_button_card_five = KeyboardButton("Многостраничник")
-site_button_card_six = KeyboardButton("Другое")
+site_button_card_two = KeyboardButton("Многостраничник")
+site_button_card_three = KeyboardButton("Сайт-визитка")
+site_button_card_four = KeyboardButton("Корпоративный сайт")
+site_button_card_five = KeyboardButton("Интернет-магазин")
+site_button_card_six = KeyboardButton("Обменник")
+site_button_card_seven = KeyboardButton("Другое")
 cancel_button = KeyboardButton("◀️ Отмена")
 site_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-site_keyboard.add(site_button_card_one, site_button_card_two, site_button_card_three, site_button_card_four, site_button_card_five, site_button_card_six, cancel_button)
+site_keyboard.add(site_button_card_one, site_button_card_two, site_button_card_three, site_button_card_four, site_button_card_five, site_button_card_six, site_button_card_seven, cancel_button)
 
-design_button_card_one = KeyboardButton("Low Plan")
-design_button_card_two = KeyboardButton("Middle Plan")
-design_button_card_three = KeyboardButton("Grand Plan")
-design_button_card_four = KeyboardButton("Fantastic Plan")
-cancel_button = KeyboardButton("◀️ Отмена")
-design_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-design_keyboard.add(design_button_card_one, design_button_card_two, design_button_card_three, design_button_card_four, cancel_button)
+# design_button_card_one = KeyboardButton("Low Plan")
+# design_button_card_two = KeyboardButton("Middle Plan")
+# design_button_card_three = KeyboardButton("Grand Plan")
+# design_button_card_four = KeyboardButton("Fantastic Plan")
+# cancel_button = KeyboardButton("◀️ Отмена")
+# design_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+# design_keyboard.add(design_button_card_one, design_button_card_two, design_button_card_three, design_button_card_four, cancel_button)
 
 design_button_tarif_card_one = KeyboardButton("Аватарка")
 design_button_tarif_card_two = KeyboardButton("Баннер")
@@ -83,7 +92,6 @@ yes_button = InlineKeyboardButton("Принять ✅", callback_data='button2')
 vote_keyboard = InlineKeyboardMarkup()
 vote_keyboard.add(note_button, yes_button)
 
-
 noter_button = InlineKeyboardButton("Удалить ❌", callback_data='buttoner1')
 voter_keyboard = InlineKeyboardMarkup()
 voter_keyboard.add(noter_button)
@@ -96,13 +104,13 @@ def inline(chat_id):
     cancel = InlineKeyboardButton(
         text="Отказ ❌",
         callback_data=reg_callback.new(
-            status="1", chat_id=chat_id,
+            status="1", chat_id=chat_id
         ),
     )
     confirm = InlineKeyboardButton(
         text="Принять ✅",
         callback_data=reg_callback.new(
-            status="2", chat_id=chat_id,
+            status="2", chat_id=chat_id
         ),
     )
     conf_inline = InlineKeyboardMarkup()
@@ -182,6 +190,8 @@ class Programming(StatesGroup):
     # внутри объявляем Стейты(состояния), далее мы будем вести пользователя по цепочке этих стейтов
     name = State()
     age = State()
+    example = State()
+    money = State()
     end = State()
 
 
@@ -190,6 +200,8 @@ class Design(StatesGroup):
     name = State()
     age = State()
     lac = State()
+    photo = State()
+    money = State()
     end = State()
 
 
@@ -262,7 +274,7 @@ async def name(message: types.Message, state: FSMContext):
 async def name(message: types.Message, state: FSMContext):
     if message.from_user.username:
         await bot.send_message(
-            message.chat.id, f'<b>👑 Администратор проекта:</b> @grankeyl\n\n<b>💸 Проблема с заказом:</b> @godot_maiden\n\n<b>🛠 По вопросам/жалобам:</b> @grankeyl', reply_markup=profilegroup_keyboard
+            message.chat.id, f'<b>👑 Администратор проекта:</b> @grankeyl, @inject_dev\n<b>🛠 По вопросам/жалобам:</b> @grankeyl, @inject_dev\n<b>💸 Проблема с заказом:</b> @godot_maiden', reply_markup=profilegroup_keyboard
         )
     else:
         await bot.send_message(
@@ -313,7 +325,7 @@ async def name(message: types.Message, state: FSMContext):
     if message.from_user.username:
         await state.update_data(name=message.text)
         await bot.send_message(
-            message.chat.id, "Тип сайта:", reply_markup=site_keyboard
+            message.chat.id, "<b>Укажите тип сайта который вам нужен:</b>", reply_markup=site_keyboard
         )
         await Programming.age.set()
     else:
@@ -328,7 +340,35 @@ async def name(message: types.Message, state: FSMContext):
     # Записываем ответ в storage
         await state.update_data(lac=message.text)
         await bot.send_message(
-        message.chat.id, "Техническое задание:", reply_markup=cancel_keyboard
+        message.chat.id, "<b>Опишите кратко техническое задание (Прикрепляйте картинки при необходимости):</b>", reply_markup=cancel_keyboard
+    )
+    else:
+        await bot.send_message(
+            message.chat.id, "<b>Ошибка! Для продолжения вы должны поставить юзернейм.</b>", reply_markup=types.ReplyKeyboardRemove()
+        )
+    await Programming.money.set()
+
+@dp.message_handler(state=Programming.money, content_types=types.ContentTypes.TEXT)
+async def name(message: types.Message, state: FSMContext):
+    if message.from_user.username:
+    # Записываем ответ в storage
+        await state.update_data(money=message.text)
+        await bot.send_message(
+        message.chat.id, "<b>Укажите свой бюджет:</b>", reply_markup=cancel_keyboard
+    )
+    else:
+        await bot.send_message(
+            message.chat.id, "<b>Ошибка! Для продолжения вы должны поставить юзернейм.</b>", reply_markup=types.ReplyKeyboardRemove()
+        )
+    await Programming.example.set()
+
+@dp.message_handler(state=Programming.example, content_types=types.ContentTypes.TEXT)
+async def name(message: types.Message, state: FSMContext):
+    if message.from_user.username:
+    # Записываем ответ в storage
+        await state.update_data(example=message.text)
+        await bot.send_message(
+        message.chat.id, "<b>Укажите примеры сайтов:</b>", reply_markup=cancel_keyboard
     )
     else:
         await bot.send_message(
@@ -346,7 +386,7 @@ async def confirmation(message: types.Message, state: FSMContext):
     )
     await bot.send_message(
         admin_chat_id,
-        f"<b>💻 Новая заявка от </b>@{message.from_user.username}\n➖➖➖➖➖➖➖➖➖➖\n"f'<b>Тип заказа:</b><pre> Сайт</pre>\n'f'<b>Тип сайта:</b><pre> {data.get("lac")}</pre>\n'f'<b>Техническое задание:</b> <pre>{data.get("name")}</pre>',
+        text = f"<b>💻 Новая заявка от </b>@{message.from_user.username}\n➖➖➖➖➖➖➖➖➖➖\n"f'<b>Тип заказа:</b><pre> Сайт</pre>\n'f'<b>Тип сайта:</b><pre> {data.get("lac")}</pre>\n'f'<b>Бюджет заказчика:</b><pre> {data.get("example")}</pre>\n'f'<b>Примеры сайтов:</b><pre> {data.get("name")}</pre>\n'f'<b>Техническое задание:</b> <pre>{data.get("money")}</pre>',
         reply_markup=inline(
             f"{message.chat.id}",
         ),
@@ -354,7 +394,21 @@ async def confirmation(message: types.Message, state: FSMContext):
     await state.finish()
 
 
+@dp.callback_query_handler(reg_callback.filter(status="2"))
+async def accept(call: CallbackQuery, callback_data: dict, state: FSMContext):
+    await call.answer()
 
+    await call.message.edit_reply_markup()
+
+    nickname = call.data.split(":")[len(call.data.split(":")) - 1]
+
+    accepting = f"<b>✅ Заказ был принят @{call.from_user.username} </b>\n\n " + call.message.text
+
+    await bot.edit_message_text(
+        chat_id = admin_chat_id, message_id = call.message.message_id, text = accepting
+    )
+    
+    await bot.send_message(int(callback_data.get("chat_id")), f"<b>Ваш заказ был принят ✅</b>\nСейчас с вами свяжется разработчик @{call.from_user.username}. (Если вам не написали, пожалуйста напишите первым)")
 
 
 
@@ -363,7 +417,7 @@ async def name(message: types.Message, state: FSMContext):
     if message.from_user.username:
         await state.update_data(name=message.text)
         await bot.send_message(
-            message.chat.id, "Тип заказа:", reply_markup=design_keyboard
+            message.chat.id, "<b>Укажите тип дизайна:</b>", reply_markup=design_tarif_keyboard
         )
         await Design.age.set()
     else:
@@ -372,14 +426,13 @@ async def name(message: types.Message, state: FSMContext):
         )
         await Design.age.set()
 
-
 @dp.message_handler(state=Design.age, content_types=types.ContentTypes.TEXT)
 async def name(message: types.Message, state: FSMContext):
     if message.from_user.username:
-    # Записываем ответ в storage
-        await state.update_data(age=message.text)
+        print (message)
+        await state.update_data(money=message.text)
         await bot.send_message(
-        message.chat.id, "Выберите тариф:", reply_markup=design_tarif_keyboard
+        message.chat.id, "<b>Укажите свой бюджет:</b>", reply_markup=cancel_keyboard
     )
     else:
         await bot.send_message(
@@ -390,10 +443,24 @@ async def name(message: types.Message, state: FSMContext):
 @dp.message_handler(state=Design.lac, content_types=types.ContentTypes.TEXT)
 async def name(message: types.Message, state: FSMContext):
     if message.from_user.username:
-    # Записываем ответ в storage
+        print (message)
         await state.update_data(lac=message.text)
         await bot.send_message(
-        message.chat.id, "Техническое задание:", reply_markup=cancel_keyboard
+        message.chat.id, "<b>Опишите краткое техническое задание (Не прикрепляйте картинки):</b>", reply_markup=cancel_keyboard
+    )
+    else:
+        await bot.send_message(
+            message.chat.id, "<b>Ошибка! Для продолжения вы должны поставить юзернейм.</b>", reply_markup=types.ReplyKeyboardRemove()
+        )
+    await Design.photo.set()
+
+@dp.message_handler(state=Design.photo, content_types=types.ContentTypes.TEXT)
+async def name(message: types.Message, state: FSMContext):
+    if message.from_user.username:
+        print (message)
+        await state.update_data(name=message.text)
+        await bot.send_message(
+        message.chat.id, "<b>Прикрепите примеры работ:</b>", reply_markup=cancel_keyboard
     )
     else:
         await bot.send_message(
@@ -402,18 +469,20 @@ async def name(message: types.Message, state: FSMContext):
     await Design.end.set()
 
 
-@dp.message_handler(state=Design.end, content_types=types.ContentTypes.TEXT)
+@dp.message_handler(state=Design.end, content_types=types.ContentTypes.PHOTO)
 async def confirmation(message: types.Message, state: FSMContext):
-    await state.update_data(name=message.text)
+    await state.update_data(end=message.photo)
     data = await state.get_data()
     await bot.send_message(
         message.chat.id, "<b>Анкета успешно заполнена, после проверки вы получите ответ.</b>", reply_markup=reg_keyboard
     )
-    await bot.send_message(
+    
+    await bot.send_photo(
         admin_chat_id,
-        f"<b>💎 Новая заявка от </b>@{message.from_user.username}\n➖➖➖➖➖➖➖➖➖➖\n"f'<b>Тип заказа:</b><pre> Дизайн</pre>\n'f'<b>Тип дизайна:</b><pre> {data.get("lac")}</pre>\n'f'<b>Техническое задание:</b> <pre>{data.get("name")}</pre>',
+        photo=message.photo[-1].file_id,
+        caption=f"<b>💎 Новая заявка от </b>@{message.from_user.username}\n➖➖➖➖➖➖➖➖➖➖\n"f'<b>Тип заказа:</b><pre> Дизайн</pre>\n'f'<b>Тип дизайна:</b><pre> {data.get("money")}, {data.get("age")}</pre>\n'f'<b>Бюджет заказчика:</b> <pre>{data.get("lac")}</pre>\n'f'<b>Техническое задание:</b> <pre>{data.get("name")}</pre>',
         reply_markup=inline(
-            f"{message.chat.id}",
+        f"{message.chat.id}",
         ),
     )
     await state.finish()
@@ -425,36 +494,33 @@ async def confirmation(message: types.Message, state: FSMContext):
 # callback данные мы сразу же приобразуем в словарь для удобства работы
 async def decline(call: CallbackQuery, callback_data: dict):
     await call.answer()
-    print(call.message.message_id, "decl")
-    await call.message.edit_reply_markup()
-    # Редачим сообщение в чате админов
+    
     await bot.send_message(
-        admin_chat_id, f"<b>❌ Заказ был отклонен @{call.from_user.username}, Причина: Нарушение правил проекта!</b>", reply_to_message_id=call.message.message_id
+        admin_chat_id, call.message.chat.id,  f"<b>❌ Заказ был отклонен @{call.from_user.username}, Причина: Нарушение правил проекта!</b>", reply_to_message_id=call.message.message_id
     )
     # Отправляем вердикт.
     await bot.send_message(int(callback_data.get("chat_id")), "<b>Ваш заказ был отклонен ❌</b>\nВозможно он нарушает политику проекта.")
 
 
 @dp.callback_query_handler(reg_callback.filter(status="2"))
-async def accept(call: CallbackQuery, callback_data: dict):
+async def accept(call: CallbackQuery, callback_data: dict, state: FSMContext):
     await call.answer()
-    print(call.message.message_id, "conf")
+
     await call.message.edit_reply_markup()
-    await bot.send_message(
-            admin_chat_id, f"<b>🎉 Заказ был принят @{call.from_user.username}, свяжитесь с клиентом!</b>", reply_to_message_id=call.message.message_id
+
+    nickname = call.data.split(":")[len(call.data.split(":")) - 1]
+
+    accepting = f"<b>✅ Заказ был принят @{call.from_user.username} </b>\n\n " + call.message.caption
+
+    await bot.edit_message_caption(
+        chat_id = admin_chat_id, message_id = call.message.message_id, caption = accepting
     )
+    # await bot.send_message(
+    #         admin_chat_id, f"<b>🎉 Заказ был принят @{call.from_user.username}, свяжитесь с клиентом @{nickname}</b>", reply_to_message_id=call.message.message_id
+    # )
     # Отправляем вердикт.
-    await bot.send_message(int(callback_data.get("chat_id")), "<b>Ваш заказ был принят ✅</b>\nСейчас с вами свяжется разработчик.")
-    # Добавляем работника в БД
-    workers.insert_one(
-        {
-            "_id": int(callback_data.get("chat_id")),
-            "name": callback_data.get("name"),
-            "age": callback_data.get("age"),
-            "lac": callback_data.get("lac"),
-            "end": callback_data.get("end"),
-        }
-    )
+    await bot.send_message(int(callback_data.get("chat_id")), f"<b>Ваш заказ был принят ✅</b>\nСейчас с вами свяжется разработчик @{call.from_user.username}. (Если вам не написали, пожалуйста напишите первым)")
+
 
 
 @dp.message_handler(commands=['listid'])
@@ -536,4 +602,4 @@ async def ban(message):
 
 if __name__ == "__main__":
     # Запускаем бота
-    executor.start_polling(dp, skip_updates=True) 
+    executor.start_polling(dp, skip_updates=True)
