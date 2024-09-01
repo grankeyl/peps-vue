@@ -1,0 +1,474 @@
+.profile {
+    overflow-y: auto;
+    max-width: 450px;
+    overflow-x: hidden;
+    height: 100%;
+    animation: fadeInSlideUp 0.25s ease-in-out forwards;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        left: -150%;
+    }
+
+    50% {
+        left: 150%;
+    }
+
+    100% {
+        left: -150%;
+    }
+}
+
+.profile {
+    padding: 0px 15px;
+}
+
+.profile_user_head_avatar {
+    width: 118px;
+    height: 118px;
+}
+
+.profile_user_head_avatar img {
+    width: 118px;
+    height: 118px;
+}
+
+.profile_user_head_settings {
+    width: 18px;
+    height: 18px;
+}
+
+.profile_user_head_avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* Ensure the image also has rounded corners */
+}
+
+.profile_band {
+    background: #1D2955;
+}
+
+.profile_connect_wallet_button_button {
+    background: linear-gradient(#00a3ff 5%, #1249b6);
+}
+
+.profile_section_skins_item {
+    background: #1D2955;
+}
+
+.profile_section_skins_item .upgrades_section_skins_item_left_info_title {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* Hide the content initially */
+.profile_user_head_avatar img,
+.profile_user_head_settings svg {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show content after loading */
+.profile img,
+.profile svg {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile_user_head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.profile_user_head .profile_user_head_avatar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile_user_head .profile_user_head_settings {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: #1A223D;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+}
+
+.profile_user_head .profile_user_head_settings svg {
+    margin: auto;
+}
+
+.profile {
+    padding-top: 22px;
+}
+
+.profile_user_name {
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 2px 5px;
+    gap: 6px;
+    margin-top: 15px;
+}
+
+.profile_user_name p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.profile_user_name span {
+    padding: 2px 5px;
+    background: radial-gradient(99.85% 88.20% at 88% 111.00000000000001%, rgb(118, 239, 255), rgb(2, 94, 233) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.profile_bands {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 14px;
+    margin-top: 30px !important;
+}
+
+.profile_band {
+    width: 100%;
+    height: 71px;
+    display: block;
+    text-align: center;
+    border-radius: 17px;
+    padding-top: 13px;
+}
+
+.profile_band img {
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+    height: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.profile_band p {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile_band:nth-child(3) {
+    text-align: left !important;
+    padding-left: 18px;
+}
+
+.profile_band:nth-child(3) h4 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.profile_band:nth-child(3) p b {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile_band:nth-child(3) p small {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile_band:nth-child(3) img {
+    width: 26px;
+    min-width: 26px;
+    max-width: 31px;
+    height: 24px;
+    min-height: 14px;
+    max-height: 32px;
+    margin-top: 0px;
+}
+
+.profile_band:nth-child(2) img {
+    width: 26px;
+    min-width: 26px;
+    max-width: 31px;
+    height: 24px;
+    min-height: 14px;
+    max-height: 32px;
+    margin-top: 0px;
+}
+
+.profile_band:nth-child(2) p {
+    margin-top: -4px;
+}
+
+.profile_connect_wallet_button button {
+    display: flex;
+    border-radius: 14px;
+    border: none;
+    width: 100%;
+    height: 37px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--h);
+}
+
+.profile_connect_wallet_button_button_center {
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.profile_connect_wallet {
+    margin-top: 14px;
+}
+
+.upgrades_section_skins_item_left_border_text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4EAAFF;
+    margin-bottom: 8px;
+}
+
+.upgrades_section_skins_item_left_border_text_bottom_abs {
+    margin-top: 23px;
+}
+
+.profile_section_skins_item {
+    padding: 0px 14px 0px 20px !important;
+}
+
+.profile_autoting {
+    margin-top: 15px;
+}
+
+.profile_section_skins_item {
+    margin-bottom: 15px !important;
+}
+
+.profile_categories {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    overflow-x: scroll;
+    margin-bottom: 16px;
+}
+
+.profile_categories::-webkit-scrollbar {
+    display: none;
+}
+
+.profile_category.active {
+    background: radial-gradient(99.85% 88.20% at 88% 111.00000000000001%, rgb(118, 239, 255), rgb(2, 94, 233) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.profile_category {
+    width: 77px;
+    min-width: 77px;
+    max-width: 77px;
+    height: 30px;
+    background: #1D2955;
+    border-radius: 50px;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.profile_category {
+    background: #1D2955;
+}
+
+.profile_category.active {
+    background: linear-gradient(#00a3ff 5%, #1249b6);
+}
+
+.profile_category p {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 57px;
+}
+
+.profile_c {
+    margin-bottom: 300px;
+}
+
+.shop_section_skins_item_buy.disabled button {
+    width: 100%;
+    background: #293665;
+    border-radius: 14px;
+    color: #ffffff46;
+    border: none;
+}
+
+.shop_section_skins_item_buy.disabled .shop_section_buy_items_item_buy_button_info p {
+    color: #ffffff46;
+}
+
+.shop_section_category {
+    display: none;
+}
+
+.shop_section_category.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.no_items_message {
+    width: 100%;
+    height: fit-content;
+    background: #1D2955;
+    border-radius: 23px;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(1) {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(2) {
+    width: fit-content !important;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(2) button {
+    padding: 0px 12px !important;
+}
+
+.shop_section_skins {
+    position: relative;
+}
+
+.profile .shop_section_skins {
+    display: block !important;
+}
+
+.no_items_message {
+    position: absolute;
+    padding: 12px 14px;
+}
+
+.no_items_message_g {
+    margin-bottom: 144px;
+    width: 100%;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(1) .shop_section_buy_items_item_buy_button_info {
+    margin-right: auto !important;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(1) {
+    margin-bottom: 14px;
+}
+
+.no_items_message .shop_section_buy_items_item_buy:nth-child(2) {
+    margin: revert !important;
+    margin-right: auto !important;
+}
+
+.profile .shop_section_skins_item.skeleton.block .shop_section_skins_item_buy {
+    margin-left: 16px !important;
+}
+
+.profile .shop_section_skins_item.skeleton.block.loaded .shop_section_skins_item_buy {
+    margin-left: 0px !important;
+}
+
+
+@media screen and (max-width: 370px) {
+    .profile .shop_section_skins_item_skin {
+        min-width: 81px !important;
+        min-height: 87px !important;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .profile .shop_section_skins_item_skin {
+        min-width: 58px;
+        height: 58px !important;
+        min-height: 96px !important;
+        position: relative;
+    }
+
+    .profile .shop_section_skins_item {
+        height: 199px !important;
+    }
+
+    .profile .shop_section_skins_item_skin p {
+        bottom: 7px !important;
+    }
+
+    .profile .shop_section_skins_item_buy {
+        max-width: 94% !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .profile .shop_section_buy_items .shop_section_buy_items_item_buy button {
+        width: 82% !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .profile .shop_section_skins_item_skin {
+        min-width: 58px;
+        height: 58px !important;
+        position: relative;
+    }
+
+    .profile .shop_section_skins_item {
+        height: 199px !important;
+    }
+
+    .profile .shop_section_skins_item_skin p {
+        bottom: 7px !important;
+    }
+
+    .profile .shop_section_skins_item_buy {
+        max-width: 94% !important;
+        text-align: center;
+    }
+
+    .shop_section {
+        transform: scale(0.94);
+        transform-origin: top;
+    }
+}
+
+.profile_inner {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.profile_inner::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta 
+      name="viewport" 
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+    <link rel="stylesheet" href="./src/assets/fonts/stylesheet.css?ver=1.0" media="all">
+    <link rel="stylesheet" href="./src/assets/css/root.css?ver=1.0" media="all">
+    <link rel="stylesheet" href="./src/assets/css/base.css?ver=1.0" media="all">
+    <link rel="stylesheet" href="./src/assets/css/game.css?ver=1.0" media="all">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- <link rel="stylesheet" href="./src/assets/css/base.css?ver=1.0" media="all"> -->
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+		<script>
+			document.addEventListener('gesturestart', function (e) {
+				e.preventDefault()
+			})
+		</script>
+
+		<script>
+			function ensureDocumentIsScrollable() {
+				const isScrollable = document.documentElement.scrollHeight > window.innerHeight
+				if (!isScrollable) {
+					document.documentElement.style.setProperty('height', 'calc(100vh + 1px)', 'important')
+				}
+			}
+			function preventCollapse() {
+				if (window.scrollY === 0) {
+					window.scrollTo(0, 1)
+				}
+			}
+
+			try {
+				const scrollableElement = document.querySelector('.content')
+				scrollableElement.addEventListener('touchstart', preventCollapse)
+				window.addEventListener('load', ensureDocumentIsScrollable)
+			} catch {}
+
+		</script>
+
+  </body>
+</html>

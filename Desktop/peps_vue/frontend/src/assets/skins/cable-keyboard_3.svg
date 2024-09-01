@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_клава_v3" data-name="клава v3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 2532">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0f0f0f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m750.36,1374.2c2.9,3.32,6.06,8.14,6.18,14.02.28,14.07-17.16,21.18-14.73,29.7,1.61,5.66,9.81,4.34,20.81,12.77,0,0,9.53,7.31,14.97,18.53,8.1,16.73-2.9,44.9-27.22,68.5"/>
+</svg>

@@ -1,0 +1,42 @@
+.layer_a.pepe_body, .layer_a.pc_v1 {
+  z-index: 4; }
+
+.layer_a.hands_purple {
+  z-index: 9; }
+
+.layer_a.eyes_red, .layer_a.cap_purple, .layer_a.mouth_happy, .layer_a.noski_0, .layer_a.tee_purple {
+  z-index: 5; }
+
+.layer_a.keyboard_v1 {
+  z-index: 7; }
+
+.layer_a.fire {
+  z-index: 100; }
+
+.layer_a.monitor_v1 {
+  z-index: 10; }
+
+.layer_a.mouse_v1 {
+  z-index: 8; }
+
+.layer_a.sigarette, .layer_a.smoke {
+  z-index: 6; }
+
+.layer_a.pc_v1 {
+  animation: pc_animation 0.2s ease-in-out infinite !important;
+  transform-origin: bottom; }
+
+.layer_i.wall_purple, .layer_i.floor_beige, .layer_i.floor_purple, .layer_i.adapter_floor, .layer_i.battery_wall {
+  z-index: 1; }
+
+.layer_i.wall_rug, .layer_i.poster_ton, .layer_i.poster_not, .layer_i.poster_ton_and_not, .layer_i.evening_sky, .layer_i.sky_day, .layer_i.houses_window, .layer_i.sunlight_day, .layer_i.trees_window, .layer_i.clouds_window, .layer_i.shade_up_down, .layer_i.chair_0, .layer_i.chair_1 {
+  z-index: 2; }
+
+.layer_i.frame_window, .layer_i.flower_window {
+  z-index: 3; }
+
+.layer_i.pepsi_table, .layer_i.pizza_0, .layer_i.table_0, .layer_i.table_1, .layer_i.evening_light_window, .layer_i.sky_light_window {
+  z-index: 5; }
+
+.layer_i.rug {
+  z-index: 7; }

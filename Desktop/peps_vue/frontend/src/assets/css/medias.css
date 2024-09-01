@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+  .layer_a, .layer_a canvas {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: -24px;
+  }
+
+  .layer_a.fire {
+    transform: translateY(50px);
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .header_buttons, .gameNotifed {
+    transform: scale(0.9);
+  }
+
+  .gameNotifed {
+    width: 110%;
+    margin-left: -19px;
+  }
+
+  .header {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .header_buttons, .gameNotifed {
+    transform: scale(0.86);
+  }
+
+  .gameNotifed {
+    width: 113%;
+    margin-left: -22px;
+  }
+
+  .header {
+    padding: 0;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .game_block {
+    top: -145px;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .game_block {
+    top: -180px;
+  }
+}

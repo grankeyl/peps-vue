@@ -1,0 +1,39 @@
+:root {
+  --background: #12182E;
+  --background_block: #1D2955;
+
+  --h: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SFRounded';
+  text-decoration: none;
+}
+
+body, html {
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+}
+
+body {
+  color: var(--h);
+  background: var(--background);
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body.default_location .menu {
+  display: none !important;
+}
+
+a, p, span {
+  color: var(--h);
+}

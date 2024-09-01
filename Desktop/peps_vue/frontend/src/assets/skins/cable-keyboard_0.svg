@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_клава_v0_провод" data-name="клава v0 провод" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 2532">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #96968f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m715.66,1381.56c31.25,10.45,39.65,20.42,40.16,28.4.49,7.74-6.56,11.91-4.28,19.6,2.44,8.22,11.86,8.03,24.95,19.25,4.6,3.94,13.13,11.24,14.97,18.53,3.69,14.58-17.75,35.5-50.26,52.75"/>
+</svg>

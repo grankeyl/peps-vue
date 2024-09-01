@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_дым_косяк_сига_" data-name="дым (косяк сига)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1170 2532">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_12);
+        opacity: .65;
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_12" data-name="Безымянный градиент 12" x1="228.42" y1="702.67" x2="228.42" y2="1210.88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset=".22" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".36" stop-color="#fff" stop-opacity=".19"/>
+      <stop offset=".51" stop-color="#fff" stop-opacity=".33"/>
+      <stop offset=".67" stop-color="#fff" stop-opacity=".51"/>
+      <stop offset=".83" stop-color="#fff" stop-opacity=".74"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="m68.38,721.21c8.86,7.03,22.26,19.09,34.05,37.08,31.01,47.34,11.32,75.41,37.95,112.62,17.36,24.25,18.34,27.97,81.83,60.64,17.89,9.2,34.2,20.96,44.35,42.72,24.55,52.67-4.42,104.58,21.43,139.69,16.55,22.48,30.46,21.36,58.01,53.18,22.82,26.36,35.12,53.2,41.9,71.49l.55-1.31c-3.24-19.23-10.31-47.9-27.8-78.06-21.7-37.42-36.93-38.3-47.05-63.09-21.75-53.29,34.92-83.92,21.39-140.08-14.18-58.83-79.48-56.5-88.4-119.41-4.19-29.56,7.91-47.85-4.28-86.97-6.53-20.97-16.57-36.78-24.24-47.05"/>
+</svg>
