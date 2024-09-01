@@ -1,0 +1,1973 @@
+{
+	"cap": {
+		"index": 10,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"cap_0": {
+				"skin_id": "cap_0",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_0.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 50000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"cap_1": {
+				"skin_id": "cap_1",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_1.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 50000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"cap_2": {
+				"skin_id": "cap_2",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_2.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 50000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"cap_3": {
+				"skin_id": "cap_3",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_3.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"cap_4": {
+				"skin_id": "cap_4",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_4.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 20000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 2
+					}
+				}
+			},
+			"cap_5": {
+				"skin_id": "cap_5",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_5.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "stars",
+					"shop_price_cost": 2,
+					"shop_rare": "legendary",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "ton",
+						"shop_upgrades_percentage": 2
+					}
+				}
+			},
+			"cap_6": {
+				"skin_id": "cap_6",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_6.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 100000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 7
+					}
+				}
+			},
+			"cap_7": {
+				"skin_id": "cap_7",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_7.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 60000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"cap_8": {
+				"skin_id": "cap_8",
+				"skin_name": "cap",
+				"skin_path": "skins/cap_8.svg",
+				"skin_category": "hats",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 120000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"chair": {
+		"index": 4,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "Chair",
+			"upgrades_place": 5,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["chair_1", "chair_2", "chair_3"],
+			"upgrades_active_path": "chair_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 350,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "stamina",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "very_rare"
+		},
+		"versions": {
+			"chair_0": {
+				"skin_id": "chair_0",
+				"skin_name": "chair",
+				"skin_path": "skins/chair_0.svg",
+				"skin_category": "chair",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"chair_1": {
+				"skin_id": "chair_1",
+				"skin_name": "chair",
+				"skin_path": "skins/chair_1.svg",
+				"skin_category": "chair",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"chair_2": {
+				"skin_id": "chair_2",
+				"skin_name": "chair",
+				"skin_path": "skins/chair_2.svg",
+				"skin_category": "chair",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"chair_3": {
+				"skin_id": "chair_3",
+				"skin_name": "chair",
+				"skin_path": "skins/chair_3.svg",
+				"skin_category": "chair",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"mouth": {
+		"index": 11,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"mouth_0": {
+				"skin_id": "mouth_0",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_0.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"mouth_1": {
+				"skin_id": "mouth_1",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_1.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": false,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouth_2": {
+				"skin_id": "mouth_2",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_2.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": false,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouth_3": {
+				"skin_id": "mouth_3",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_3.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": false,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouth_4": {
+				"skin_id": "mouth_4",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_4.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": false,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouth_5": {
+				"skin_id": "mouth_5",
+				"skin_name": "mouth",
+				"skin_path": "skins/mouth_5.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": false,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 6700,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"tee": {
+		"index": 6,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"tee_0": {
+				"skin_id": "tee_0",
+				"skin_name": "tee",
+				"skin_path": "skins/tee_0.svg",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"tee_1": {
+				"skin_id": "tee_1",
+				"skin_name": "tee",
+				"skin_path": "skins/tee_1.svg",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "basic",
+						"shop_upgrades_percentage": 0
+					}
+				}
+			},
+			"tee_2": {
+				"skin_id": "tee_2",
+				"skin_name": "tee",
+				"skin_path": "skins/tee_2.svg",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "basic",
+						"shop_upgrades_percentage": 0
+					}
+				}
+			},
+			"tee_3": {
+				"skin_id": "tee_3",
+				"skin_name": "tee",
+				"skin_path": "skins/tee_3.svg",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 100000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"glasses": {
+		"index": 9,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"glasses_0": {
+				"skin_id": "glasses_0",
+				"skin_name": "glasses",
+				"skin_path": "skins/glasses_0.svg",
+				"skin_category": "glasses",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 25000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"glasses_1": {
+				"skin_id": "glasses_1",
+				"skin_name": "glasses",
+				"skin_path": "skins/glasses_1.svg",
+				"skin_category": "glasses",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 5000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"glasses_2": {
+				"skin_id": "glasses_2",
+				"skin_name": "glasses",
+				"skin_path": "skins/glasses_2.svg",
+				"skin_category": "glasses",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 90000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 7
+					}
+				}
+			}
+		}
+	},
+	"joint": {
+		"index": 14,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"joint_0": {
+				"skin_id": "joint_0",
+				"skin_name": "joint",
+				"skin_path": "skins/joint_0.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 3
+					}
+				}
+			},
+			"joint_1": {
+				"skin_id": "joint_1",
+				"skin_name": "joint",
+				"skin_path": "skins/joint_1.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 60000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 10
+					}
+				}
+			}
+		}
+	},
+	"soplya-mouth": {
+		"index": 13,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"soplya-mouth_0": {
+				"skin_id": "soplya-mouth_0",
+				"skin_name": "soplya-mouth",
+				"skin_path": "skins/soplya-mouth_0.svg",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 2500,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"pc": {
+		"index": 5,
+		"clickable": false,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "System box",
+			"upgrades_place": 1,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["pc_1", "pc_2", "pc_3"],
+			"upgrades_active_path": "pc_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 500,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "money",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "epic"
+		},
+		"versions": {
+			"pc_0": {
+				"skin_id": "pc_0",
+				"skin_name": "pc",
+				"skin_path": "skins/pc_0.svg",
+				"skin_category": "system box",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"pc_1": {
+				"skin_id": "pc_1",
+				"skin_name": "pc",
+				"skin_path": "skins/pc_1.svg",
+				"skin_category": "system box",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"pc_2": {
+				"skin_id": "pc_2",
+				"skin_name": "pc",
+				"skin_path": "skins/pc_2.svg",
+				"skin_category": "system box",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"pc_3": {
+				"skin_id": "pc_3",
+				"skin_name": "pc",
+				"skin_path": "skins/pc_3.svg",
+				"skin_category": "system box",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"monitor": {
+		"index": 13,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "Monitor",
+			"upgrades_place": 2,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["monitor_1", "monitor_2", "monitor_3"],
+			"upgrades_active_path": "monitor_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 500,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "money",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "epic"
+		},
+		"versions": {
+			"monitor_0": {
+				"skin_id": "monitor_0",
+				"skin_name": "monitor",
+				"skin_path": "skins/monitor_0.svg",
+				"skin_category": "monitors",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"monitor_1": {
+				"skin_id": "monitor_1",
+				"skin_name": "monitor",
+				"skin_path": "skins/monitor_1.svg",
+				"skin_category": "monitors",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"monitor_2": {
+				"skin_id": "monitor_2",
+				"skin_name": "monitor",
+				"skin_path": "skins/monitor_2.svg",
+				"skin_category": "monitors",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"monitor_3": {
+				"skin_id": "monitor_3",
+				"skin_name": "monitor",
+				"skin_path": "skins/monitor_3.svg",
+				"skin_category": "monitors",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"keyboard": {
+		"index": 10,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "Keyboard",
+			"upgrades_place": 3,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3"],
+			"upgrades_active_path": "keyboard_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 400,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "views",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "rare"
+		},
+		"versions": {
+			"keyboard_0": {
+				"skin_id": "keyboard_0",
+				"skin_name": "keyboard",
+				"skin_path": "skins/keyboard_0.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"keyboard_1": {
+				"skin_id": "keyboard_1",
+				"skin_name": "keyboard",
+				"skin_path": "skins/keyboard_1.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"keyboard_2": {
+				"skin_id": "keyboard_2",
+				"skin_name": "keyboard",
+				"skin_path": "skins/keyboard_2.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"keyboard_3": {
+				"skin_id": "keyboard_3",
+				"skin_name": "keyboard",
+				"skin_path": "skins/keyboard_3.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"cable-keyboard": {
+		"index": 8,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": false,
+			"upgrades_title": "None",
+			"upgrades_place": 1,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["cable-keyboard_1", "cable-keyboard_2"],
+			"upgrades_active_path": "cable-keyboard_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 1000,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "money",
+			"upgrades_percentage": 5
+		},
+		"versions": {
+			"cable-keyboard_0": {
+				"skin_id": "cable-keyboard_0",
+				"skin_name": "cable-keyboard",
+				"skin_path": "skins/cable-keyboard_0.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"cable-keyboard_1": {
+				"skin_id": "cable-keyboard_1",
+				"skin_name": "cable-keyboard",
+				"skin_path": "skins/cable-keyboard_1.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"cable-keyboard_2": {
+				"skin_id": "cable-keyboard_2",
+				"skin_name": "cable-keyboard",
+				"skin_path": "skins/cable-keyboard_2.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"cable-keyboard_3": {
+				"skin_id": "cable-keyboard_3",
+				"skin_name": "cable-keyboard",
+				"skin_path": "skins/cable-keyboard_3.svg",
+				"skin_category": "keyboards",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"adapter": {
+		"index": 4,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"adapter_0": {
+				"skin_id": "adapter_0",
+				"skin_name": "adapter",
+				"skin_path": "skins/adapter_0.svg",
+				"skin_category": "floor",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"battery": {
+		"index": 2,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"battery_0": {
+				"skin_id": "battery_0",
+				"skin_name": "battery",
+				"skin_path": "skins/battery_0.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"rug": {
+		"index": 8,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"rug_0": {
+				"skin_id": "rug_0",
+				"skin_name": "rug",
+				"skin_path": "skins/rug_0.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 8000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"rug_1": {
+				"skin_id": "rug_1",
+				"skin_name": "rug",
+				"skin_path": "skins/rug_1.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 17000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 7
+					}
+				}
+			}
+		}
+	},
+	"floor": {
+		"index": 3,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"floor_0": {
+				"skin_id": "floor_0",
+				"skin_name": "floor",
+				"skin_path": "skins/floor_0.svg",
+				"skin_category": "floor",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"floor_1": {
+				"skin_id": "floor_1",
+				"skin_name": "floor",
+				"skin_path": "skins/floor_1.svg",
+				"skin_category": "floor",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 5000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"floor_2": {
+				"skin_id": "floor_2",
+				"skin_name": "floor",
+				"skin_path": "skins/floor_2.svg",
+				"skin_category": "floor",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 23000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"flower": {
+		"index": 6,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"flower_0": {
+				"skin_id": "flower_0",
+				"skin_name": "flower",
+				"skin_path": "skins/flower_0.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 100000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"flower_1": {
+				"skin_id": "flower_1",
+				"skin_name": "flower",
+				"skin_path": "skins/flower_1.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 13000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"item-table": {
+		"index": 5,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"item-table_0": {
+				"skin_id": "item-table_0",
+				"skin_name": "item-table",
+				"skin_path": "skins/item-table_0.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 16000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"item-table_1": {
+				"skin_id": "item-table_1",
+				"skin_name": "item-table",
+				"skin_path": "skins/item-table_1.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 19000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"light-window": {
+		"index": 15,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"light-window_0": {
+				"skin_id": "light-window_0",
+				"skin_name": "light-window",
+				"skin_path": "skins/light-window_0.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"light-window_1": {
+				"skin_id": "light-window_1",
+				"skin_name": "light-window",
+				"skin_path": "skins/light-window_1.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"poster": {
+		"index": 2,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"poster_not": {
+				"skin_id": "poster_not",
+				"skin_name": "poster",
+				"skin_path": "skins/poster_not.svg",
+				"skin_category": "posters",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 250000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 10
+					}
+				}
+			},
+			"poster_ton": {
+				"skin_id": "poster_ton",
+				"skin_name": "poster",
+				"skin_path": "skins/poster_ton.svg",
+				"skin_category": "posters",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "stars",
+					"shop_price_cost": 2,
+					"shop_rare": "legendary",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "ton",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"poster_stars": {
+				"skin_id": "poster_stars",
+				"skin_name": "poster",
+				"skin_path": "skins/poster_stars.svg",
+				"skin_category": "posters",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 30000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"poster_rug": {
+				"skin_id": "poster_rug",
+				"skin_name": "poster",
+				"skin_path": "skins/poster_rug.svg",
+				"skin_category": "posters",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"poster_vk": {
+				"skin_id": "poster_vk",
+				"skin_name": "poster",
+				"skin_path": "skins/poster_vk.svg",
+				"skin_category": "posters",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 1000000,
+					"shop_rare": "epic",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "money",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"table": {
+		"index": 7,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "Desk",
+			"upgrades_place": 6,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["table_1", "table_2", "table_3"],
+			"upgrades_active_path": "table_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 350,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "stamina",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "very_rare"
+		},
+		"versions": {
+			"table_0": {
+				"skin_id": "table_0",
+				"skin_name": "table",
+				"skin_path": "skins/table_0.svg",
+				"skin_category": "table",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"table_1": {
+				"skin_id": "table_1",
+				"skin_name": "table",
+				"skin_path": "skins/table_1.svg",
+				"skin_category": "table",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"table_2": {
+				"skin_id": "table_2",
+				"skin_name": "table",
+				"skin_path": "skins/table_2.svg",
+				"skin_category": "table",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"table_3": {
+				"skin_id": "table_3",
+				"skin_name": "table",
+				"skin_path": "skins/table_3.svg",
+				"skin_category": "table",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"wall": {
+		"index": 1,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"wall_0": {
+				"skin_id": "wall_0",
+				"skin_name": "wall",
+				"skin_path": "skins/wall_0.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"wall_1": {
+				"skin_id": "wall_1",
+				"skin_name": "wall",
+				"skin_path": "skins/wall_1.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"wall_2": {
+				"skin_id": "wall_2",
+				"skin_name": "wall",
+				"skin_path": "skins/wall_2.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"wall_3": {
+				"skin_id": "wall_3",
+				"skin_name": "wall",
+				"skin_path": "skins/wall_3.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 15000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"window": {
+		"index": 2,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"window_0": {
+				"skin_id": "window_0",
+				"skin_name": "window",
+				"skin_path": "skins/window_0.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"window_1": {
+				"skin_id": "window_1",
+				"skin_name": "window",
+				"skin_path": "skins/window_1.svg",
+				"skin_category": "wall",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"eyes": {
+		"index": 7,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"eyes_0": {
+				"skin_id": "eyes_0",
+				"skin_name": "eyes",
+				"skin_path": "skins/eyes_0.riv",
+				"skin_category": "eyes",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"eyes_1": {
+				"skin_id": "eyes_1",
+				"skin_name": "eyes",
+				"skin_path": "skins/eyes_1.riv",
+				"skin_category": "eyes",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 20000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"eyes_2": {
+				"skin_id": "eyes_2",
+				"skin_name": "eyes",
+				"skin_path": "skins/eyes_2.riv",
+				"skin_category": "eyes",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"eyes_3": {
+				"skin_id": "eyes_3",
+				"skin_name": "eyes",
+				"skin_path": "skins/eyes_3.riv",
+				"skin_category": "eyes",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 8000,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"mouse": {
+		"index": 9,
+		"clickable": true,
+		"profile_show": true,
+		"upgrades": {
+			"upgrades_show": true,
+			"upgrades_title": "Mouse",
+			"upgrades_place": 4,
+			"upgrades_category": "equipment",
+			"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3"],
+			"upgrades_active_path": "mouse_0",
+			"upgrades_level": 1,
+			"upgrades_level_max": 50,
+			"upgrades_level_step": 1,
+			"upgrades_current_index": -1,
+			"upgrades_cost": 400,
+			"upgrades_cost_type": "money",
+			"upgrades_gift": "views",
+			"upgrades_percentage": 5,
+			"upgrades_rare": "rare"
+		},
+		"versions": {
+			"mouse_0": {
+				"skin_id": "mouse_0",
+				"skin_name": "mouse",
+				"skin_path": "skins/mouse_0.riv",
+				"skin_category": "mouse",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouse_1": {
+				"skin_id": "mouse_1",
+				"skin_name": "mouse",
+				"skin_path": "skins/mouse_1.riv",
+				"skin_category": "mouse",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouse_2": {
+				"skin_id": "mouse_2",
+				"skin_name": "mouse",
+				"skin_path": "skins/mouse_2.riv",
+				"skin_category": "mouse",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			},
+			"mouse_3": {
+				"skin_id": "mouse_3",
+				"skin_name": "mouse",
+				"skin_path": "skins/mouse_3.riv",
+				"skin_category": "mouse",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 0,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": true,
+						"shop_upgrades_type_gift": "views",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"hands": {
+		"index": 12,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"hands_0": {
+				"skin_id": "hands_0",
+				"skin_name": "hands",
+				"skin_path": "skins/hands_0.riv",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"hands_1": {
+				"skin_id": "hands_1",
+				"skin_name": "hands",
+				"skin_path": "skins/hands_1.riv",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"hands_2": {
+				"skin_id": "hands_2",
+				"skin_name": "hands",
+				"skin_path": "skins/hands_2.riv",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			},
+			"hands_3": {
+				"skin_id": "hands_3",
+				"skin_name": "hands",
+				"skin_path": "skins/hands_3.riv",
+				"skin_category": "wear",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"noski": {
+		"index": 6,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"noski_0": {
+				"skin_id": "noski_0",
+				"skin_name": "noski",
+				"skin_path": "skins/noski_0.riv",
+				"skin_category": "shoes",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 3299,
+					"shop_rare": "rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	},
+	"smoke": {
+		"index": 20,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"smoke": {
+				"skin_id": "smoke",
+				"skin_name": "smoke",
+				"skin_path": "skins/smoke.riv",
+				"skin_category": "mouth",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"pepe": {
+		"index": 5,
+		"clickable": true,
+		"profile_show": true,
+		"versions": {
+			"pepe_0": {
+				"skin_id": "pepe_0",
+				"skin_name": "pepe",
+				"skin_path": "skins/pepe_0.riv",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"shop_settings": {
+					"shop_show": false
+				}
+			}
+		}
+	},
+	"item-window": {
+		"index": 9,
+		"clickable": false,
+		"profile_show": true,
+		"versions": {
+			"item-window_0": {
+				"skin_id": "item-window_0",
+				"skin_name": "item-window",
+				"skin_path": "skins/item-window_0.svg",
+				"skin_category": "other",
+				"skin_status": "unused",
+				"takeoff": true,
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 9000,
+					"shop_rare": "very_rare",
+					"shop_upgrades_add_cost_views": 0,
+					"shop_upgrades_add_cost_money": 0,
+					"shop_upgrades_add_cost_stamina": 0,
+					"shop_upgrades": {
+						"shop_upgrades_type": false,
+						"shop_upgrades_type_gift": "stamina",
+						"shop_upgrades_percentage": 5
+					}
+				}
+			}
+		}
+	}
+}

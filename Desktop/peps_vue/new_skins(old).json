@@ -1,0 +1,55 @@
+{
+	"wear": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
+			"tee_0": {
+				"z-index": 5,
+				"skin_id": "tee_0",
+				"skin_name": "tee",
+				"skin_path": "skins/tee_0.svg",
+				"skin_status": false,
+				"take": false,
+				"rare": "rare",
+				"baffs": {
+					"baffs_type": false,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5
+				},
+				"shop_settings": {
+					"shop_show": false,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["pc_1", "pc_2", "pc_3"],
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 500
+				}
+			}
+		}
+	},
+	"shoes": {},
+	"hats": {},
+	"glasses": {},
+	"eyes": {},
+	"mouth": {},
+	"posters": {},
+	"wall": {},
+	"system_box": {},
+	"monitors": {},
+	"mouse": {},
+	"keyboards": {},
+	"table": {},
+	"chair": {},
+	"floor": {},
+	"room": {},
+	"other": {}
+}

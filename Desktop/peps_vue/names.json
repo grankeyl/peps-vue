@@ -1,0 +1,446 @@
+{
+	"keyboard_0": {
+		"uuid_name": "keyboard_0",
+		"name": "Old keyboard",
+		"description": "The oldest member of the keyboard genus, the original cream color became yellow, but for free!",
+		"description_ru": "Старейший представитель рода клавиатур, первоначальный кремовый цвет стал желтым, но бесплатно!"
+	},
+	"keyboard_1": {
+		"uuid_name": "keyboard_1",
+		"name": "Retro keyboard",
+		"description": "Straight out of the 00s: silver plastic with chrome inlays.",
+		"description_ru": "Прямо из 00-х: серебристый пластик с хромированными вставками."
+	},
+	"keyboard_2": {
+		"uuid_name": "keyboard_2",
+		"name": "Office keyboard",
+		"description": "A friend gave it to you because the last one stopped working all the keys.",
+		"description_ru": "Друг подарил ее тебе, потому что у предыдущей перестали работать все клавиши."
+	},
+	"keyboard_3": {
+		"uuid_name": "keyboard_3",
+		"name": "Pseudo-gamer keyboard",
+		"description": "The salesman at the store said its the best gamer keyboard out there.",
+		"description_ru": "Продавец в магазине сказал, что это лучшая клавиатура для геймеров."
+	},
+	"systembox_0": {
+		"uuid_name": "systembox_0",
+		"name": "Vintage system box",
+		"description": "Maybe he was standing in a computer science class. About 20 years ago.",
+		"description_ru": "Может быть, он стоял в классе информатики. Около 20 лет назад."
+	},
+	"systembox_1": {
+		"uuid_name": "systembox_1",
+		"name": "Advanced system box",
+		"description": "Pretty much the same as the first one, but it shows the time and even pulls surfing on the internet.",
+		"description_ru": "Практически то же самое, что и первое, но показывает время и даже тянет серфинг в интернете."
+	},
+	"systembox_2": {
+		"uuid_name": "systembox_2",
+		"name": "Common system box",
+		"description": "Single-core processor combined with 2gb of RAM gives a powerful performance boost in Internet Explorer.",
+		"description_ru": "Одноядерный процессор в сочетании с 2Гб оперативной памяти обеспечивает мощный прирост производительности в Internet Explorer."
+	},
+	"systembox_3": {
+		"uuid_name": "systembox_3",
+		"name": "Exotic system box",
+		"description": "Hand-cut hole and diode strip to make it prettier (but not more powerful, bruh)",
+		"description_ru": "Вырезанное вручную отверстие и диодная лента, чтобы сделать его красивее (но не мощнее, bruh)"
+	},
+	"monitors_0": {
+		"uuid_name": "monitors_0",
+		"name": "CRT monitor",
+		"description": "CRT monitor. It shows the image. Basically, thats it.",
+		"description_ru": "ЭЛТ-монитор. Он показывает изображение. Вот, собственно, и все."
+	},
+	"monitors_1": {
+		"uuid_name": "monitors_1",
+		"name": "Popular monitor",
+		"description": "In the 00s, just about everyone had one. Now you can touch history.",
+		"description_ru": "В 00-х годах он был почти у каждого. Теперь вы можете прикоснуться к истории."
+	},
+	"monitors_2": {
+		"uuid_name": "monitors_2",
+		"name": "LCD monitor",
+		"description": "LCD monitor, brighter and more contrasty image.",
+		"description_ru": "ЖК-монитор, более яркое и контрастное изображение."
+	},
+	"monitors_3": {
+		"uuid_name": "monitors_3",
+		"name": "PG Monitor",
+		"description": "On special order from PepsGame inc.",
+		"description_ru": "По специальному заказу от PepsGame inc."
+	},
+	"mouse_0": {
+		"uuid_name": "mouse_0",
+		"name": "Stinky mouse",
+		"description": "Yes, it has sticky buttons, yes, it stinks with greasy fingers, but better with it than without.",
+		"description_ru": "Да, у нее липкие кнопки, да, она воняет жирными пальцами, но лучше с ний, чем без нее."
+	},
+	"mouse_1": {
+		"uuid_name": "mouse_1",
+		"name": "Retro mouse",
+		"description": "No one knows where it came from, no one knows how much its worth.",
+		"description_ru": "Никто не знает, откуда он взялся, никто не знает, сколько он стоит."
+	},
+	"mouse_2": {
+		"uuid_name": "mouse_2",
+		"name": "Laser mouse",
+		"description": "Yay! Now instead of a ball, its the cheapest laser Ive ever seen!",
+		"description_ru": "Ура! Теперь вместо шарика - самый дешевый лазер, который ты когда-либо видел!"
+	},
+	"mouse_3": {
+		"uuid_name": "mouse_3",
+		"name": "Toy mouse",
+		"description": "Brutal, pink, for real men.",
+		"description_ru": "Брутальная, розовая, для настоящих мужчин."
+	},
+	"table_0": {
+		"uuid_name": "table_0",
+		"name": "Soviet desk",
+		"description": "The most ordinary lacquered table, produced in the Soviet Union and passed on by inheritance.",
+		"description_ru": "Самый обычный лакированный стол, произведенный в Советском Союзе и передававшийся по наследству."
+	},
+	"table_1": {
+		"uuid_name": "table_1",
+		"name": "New desk",
+		"description": "Bought only because the old one had rotted legs.",
+		"description_ru": "Купили только потому, что у старого сгнили ножки."
+	},
+	"table_2": {
+		"uuid_name": "table_2",
+		"name": "Pikea desk",
+		"description": "Was bought at Pikea 10 years ago, then sold, sold again and now you have it.",
+		"description_ru": "Был куплен в Pikea 10 лет назад, затем продан, снова продан и вот теперь он у тебя."
+	},
+	"table_3": {
+		"uuid_name": "table_3",
+		"name": "Modern desk",
+		"description": "Not a bad desk, not the best, but not used anymore either",
+		"description_ru": "Неплохой стол, не самый лучший, но и не самый худший."
+	},
+	"chair_0": {
+		"uuid_name": "chair_0",
+		"name": "Soviet chair",
+		"description": "Grandpa made it with his own hands. For the ages!",
+		"description_ru": "Дед сделал его своими руками. На века!"
+	},
+	"chair_1": {
+		"uuid_name": "chair_1",
+		"name": "Office chair",
+		"description": "The cheapest chair with the seat falling off.",
+		"description_ru": "Самый дешевый стул с отваливающимся сиденьем."
+	},
+	"chair_2": {
+		"uuid_name": "chair_2",
+		"name": "Spin chair",
+		"description": "Its actually worse than the previous chair, but you can spin on it!",
+		"description_ru": "На самом деле он еще хуже, чем предыдущий стул, но на нем можно крутиться!"
+	},
+	"chair_3": {
+		"uuid_name": "chair_3",
+		"name": "Anotomic chair",
+		"description": "It looks a bit childish, but it's anatomical, with an adjustable backrest!",
+		"description_ru": "Он выглядит немного по-детски, но он анатомический, с регулируемой спинкой!"
+	},
+	"cap_0": {
+		"uuid_name": "cap_0",
+		"name": "Blue Cap",
+		"description": "A blue classic cap, will add a bit of joy as Peps favorite color is blue.",
+		"description_ru": "Синяя классическая кепка добавит немного радости, ведь любимый цвет Пепса - синий."
+	},
+	"cap_1": {
+		"uuid_name": "cap_1",
+		"name": "Purple Cap",
+		"description": "With such a cap is not ashamed to go out and on the street, good thing you do not have to, because you do not leave the house.",
+		"description_ru": "В такой шапочке не стыдно выйти и на улицу, благо тебе не придется, ведь ты не выходишь из дома."
+	},
+	"cap_2": {
+		"uuid_name": "cap_2",
+		"name": "Orange Cap",
+		"description": "Good for sunny weather.",
+		"description_ru": "Хорошо подходит для ясной погоды."
+	},
+	"cap_3": {
+		"uuid_name": "cap_3",
+		"name": "Hstr Cmbt",
+		"description": "When it comes to scam games, you want to put that skin on.",
+		"description_ru": "Когда речь идет о мошеннических играх, нужно надеть этот скин."
+	},
+	"cap_4": {
+		"uuid_name": "cap_4",
+		"name": "Boomer headphones",
+		"description": "It may seem a little crazy, pretty baby, But i promise mommas gonna be alright",
+		"description_ru": "It may seem a little crazy, pretty baby, But i promise mommas gonna be alright"
+	},
+	"cap_5": {
+		"uuid_name": "cap_5",
+		"name": "White Cap",
+		"description": "«You have a rather unusual imagination, for you chose the color of hopelessness» - Project Coder",
+		"description_ru": "«У вас довольно необычное воображение, раз вы выбрали цвет безнадежности» - Главный программист"
+	},
+	"cap_6": {
+		"uuid_name": "cap_6",
+		"name": "Black Cap",
+		"description": "Its a little hot, but its very stylish.",
+		"description_ru": "В ней немного жарко, но она очень стильная."
+	},
+	"cap_7": {
+		"uuid_name": "cap_7",
+		"name": "Kitty phones",
+		"description": ">.<",
+		"description_ru": ">.<"
+	},
+	"cap_8": {
+		"uuid_name": "cap_8",
+		"name": "Chilled Panama",
+		"description": "What are we doing in the middle of this damn desert?",
+		"description_ru": "Что мы делаем посреди этой проклятой пустыни?"
+	},
+	"eyes_0": {
+		"uuid_name": "eyes_0",
+		"name": "Kind eyes",
+		"description": "Theres nothing better than the original Pep peepholes",
+		"description_ru": "Нет ничего лучше, чем оригинальные глазки Pep."
+	},
+	"eyes_1": {
+		"uuid_name": "eyes_1",
+		"name": "Tired eyes",
+		"description": "Mom, its not what you think, its windblown. Really!",
+		"description_ru": "Мам, это не то, что ты подумала, это ветер надул. Правда!"
+	},
+	"eyes_2": {
+		"uuid_name": "eyes_2",
+		"name": "Stupid eyes",
+		"description": "eeeeeeeee aaaaa mmmmmm?.",
+		"description_ru": "ааааыыыыыыымммм?"
+	},
+	"eyes_3": {
+		"uuid_name": "eyes_3",
+		"name": "Shy eyes",
+		"description": "hehe, its kinda pretty",
+		"description_ru": "хе-хе, он довольно симпатичный"
+	},
+	"flower_0": {
+		"uuid_name": "flower_0",
+		"name": "Funny flower",
+		"description": "Sprouts from the vegetable garden outside the city.",
+		"description_ru": "Цветок с огорода за городом."
+	},
+	"flower_1": {
+		"uuid_name": "flower_1",
+		"name": "Fern",
+		"description": "A fern will add a cozy touch to your room, well, or turn it into an office.",
+		"description_ru": "Паппоротник добавит уюта в вашу комнату, ну или превратит ее в офис."
+	},
+	"room-item_0": {
+		"uuid_name": "room-item_0",
+		"name": "Fern",
+		"description": "A fern will add a cozy touch to your room, well, or turn it into an office.",
+		"description_ru": "Паппоротник добавит уюта в вашу комнату, ну или превратит ее в офис."
+	},
+	"glasses_0": {
+		"uuid_name": "glasses_0",
+		"name": "Owner glasses",
+		"description": "The founder of the project has exactly the same.",
+		"description_ru": "У основателя проекта точно такие же."
+	},
+	"glasses_1": {
+		"uuid_name": "glasses_1",
+		"name": "Novosiltsev",
+		"description": "Perfect for the high school loser",
+		"description_ru": "Идеально подходит для неудачника из средней школы"
+	},
+	"glasses_2": {
+		"uuid_name": "glasses_2",
+		"name": "Classic Sunglasses",
+		"description": "You can see the bats through them!",
+		"description_ru": "Осторожно. Через них видно летучих мышей!"
+	},
+	"item-table_0": {
+		"uuid_name": "item-table_0",
+		"name": "Pep Si",
+		"description": "Peps favorite drink is right under the table!",
+		"description_ru": "Любимый напиток Пепса - прямо под столом!"
+	},
+	"item-table_1": {
+		"uuid_name": "item-table_1",
+		"name": "Pepe Roni",
+		"description": "Yes, its a little weathered and chilled, but still delicious.",
+		"description_ru": "Да, она немного обветрилась и остыла, но все равно вкусная."
+	},
+	"joint_0": {
+		"uuid_name": "joint_0",
+		"name": "Candy",
+		"description": "As long as the parents dont see, anything goes.",
+		"description_ru": "Пока родители не видят, можно делать все, что угодно."
+	},
+	"joint_1": {
+		"uuid_name": "joint_1",
+		"name": "Funny Whistle",
+		"description": "I hope we don't go to jail for this.",
+		"description_ru": "Надеюсь, нас не посадят за это."
+	},
+	"mouth_0": {
+		"uuid_name": "mouth_0",
+		"name": "Sad mouth",
+		"description": "Dead inside. Sad outside.",
+		"description_ru": "Мертвый внутри. Грустный снаружи."
+	},
+	"mouth_1": {
+		"uuid_name": "mouth_1",
+		"name": "Happy mouth",
+		"description": "Its cool!",
+		"description_ru": "Круто!"
+	},
+	"mouth_2": {
+		"uuid_name": "mouth_2",
+		"name": "Purple lipstick",
+		"description": "To be the prettiest girl (or boy?).",
+		"description_ru": "Чтобы быть самой красивой девочкой (или мальчиком?)."
+	},
+	"mouth_3": {
+		"uuid_name": "mouth_3",
+		"name": "Red lipstick",
+		"description": "To be the prettiest girl (or boy?).",
+		"description_ru": "Чтобы быть самой красивой девочкой (или мальчиком?)."
+	},
+	"mouth_4": {
+		"uuid_name": "mouth_4",
+		"name": "Pink lipstick",
+		"description": "To be the prettiest girl (or boy?).",
+		"description_ru": "Чтобы быть самой красивой девочкой (или мальчиком?)."
+	},
+	"mouth_5": {
+		"uuid_name": "mouth_5",
+		"name": "Laughing mouth",
+		"description": "Pepe's classic laughing mouth. Perfect.",
+		"description_ru": "Классический смеющийся рот Пепе. Идеально."
+	},
+	"posters_0": {
+		"uuid_name": "posters_0",
+		"name": "Poster NOT",
+		"description": "The founder keeps Notcoins in his portfolio, which is why this skin exists.",
+		"description_ru": "Основатель держит ноткоины в своем портфеле, поэтому и существует этот скин."
+	},
+	"posters_1": {
+		"uuid_name": "posters_1",
+		"name": "Poster TON",
+		"description": "Every self-respecting Pep should have one of these on his wall.",
+		"description_ru": "Каждый уважающий себя Пеп должен иметь такую картину на своей стене."
+	},
+	"posters_2": {
+		"uuid_name": "posters_2",
+		"name": "Soviet carpet",
+		"description": "In Soviet times, this carpet was a symbol of wealth and affluence.",
+		"description_ru": "В советское время этот ковер был символом богатства и достатка."
+	},
+	"posters_3": {
+		"uuid_name": "posters_3",
+		"name": "Durov Wall",
+		"description": "Now the famous Durov Wall wont go anywhere.",
+		"description_ru": "Теперь, знаменитая Стена Дурова не пропадет никуда."
+	},
+	"posters_4": {
+		"uuid_name": "posters_4",
+		"name": "Poster Starsheet",
+		"description": "Now 30% of your hard earned $Peps will go to Apple and Google!",
+		"description_ru": "Теперь 30% заработанных вами денег будут уходить в Apple и Google!"
+	},
+	"rug_0": {
+		"uuid_name": "rug_0",
+		"name": "Mouse pad",
+		"description": "Now you can switch between tabs 2 times faster.",
+		"description_ru": "Теперь вы можете переключаться между вкладками в 2 раза быстрее."
+	},
+	"rug_1": {
+		"uuid_name": "rug_1",
+		"name": "Skuf rug",
+		"description": "For real skufs",
+		"description_ru": "Для настоящих скуфов."
+	},
+	"soplya-mouth_0": {
+		"uuid_name": "soplya-mouth_0",
+		"name": "Snotty",
+		"description": "I should blow my nose.",
+		"description_ru": "Мне нужно высморкаться."
+	},
+	"tee_0": {
+		"uuid_name": "tee_0",
+		"name": "Blue tee",
+		"description": "Classic blue t-shirt. Perfect under a blue cap.",
+		"description_ru": "Классическая синяя футболка. Идеально подходит под синюю кепку."
+	},
+	"tee_1": {
+		"uuid_name": "tee_1",
+		"name": "Purple tee",
+		"description": "My girlfriend asked me to draw this skin.",
+		"description_ru": "Моя девушка попросила меня нарисовать эту футболку."
+	},
+	"tee_2": {
+		"uuid_name": "tee_2",
+		"name": "Sponge tee",
+		"description": "Straight from Bikini Bottom!",
+		"description_ru": "Прямиком из Бикини Боттом!"
+	},
+	"tee_3": {
+		"uuid_name": "tee_3",
+		"name": "Bat shirt",
+		"description": "«We had 2 bags of weed, 75 mescaline pills, 5 packs of acid..»",
+		"description_ru": "«У нас было 2 пакета травы, 75 таблеток мескалина, 5 упаковок кислоты..»"
+	},
+	"wall_0": {
+		"uuid_name": "wall_0",
+		"name": "Beige walls",
+		"description": "Old and worn wallpaper, smells like an old Khrushchevka house",
+		"description_ru": "Старые и потертые обои, пахнут старой Хрущевкой"
+	},
+	"wall_1": {
+		"uuid_name": "wall_1",
+		"name": "Purple walls",
+		"description": "The pleasant purple hue will definitely add to the efficiency of performance.",
+		"description_ru": "Приятный фиолетовый оттенок определенно добавит эффективности в работе."
+	},
+	"wall_2": {
+		"uuid_name": "wall_2",
+		"name": "Green walls",
+		"description": "They say green is calming.",
+		"description_ru": "Говорят, что зеленый цвет успокаивает."
+	},
+	"wall_3": {
+		"uuid_name": "wall_3",
+		"name": "Grey walls",
+		"description": "Damn, this is so clean!",
+		"description_ru": "Черт, они и вправду классные!"
+	},
+	"floor_0": {
+		"uuid_name": "floor_0",
+		"name": "Brown floor",
+		"description": "Careful, there's a nail sticking out of the right corner!",
+		"description_ru": "Осторожно, в правом углу торчит гвоздь!"
+	},
+	"floor_1": {
+		"uuid_name": "floor_1",
+		"name": "Purple floor",
+		"description": "Now your apartment looks like a mental institution!",
+		"description_ru": "Теперь ваша квартира похожа на психиатрическую лечебницу!"
+	},
+	"floor_2": {
+		"uuid_name": "floor_2",
+		"name": "Ceramic tile",
+		"description": "Underfloor heating to keep your feet warm in winter",
+		"description_ru": "Теплый пол с подогревом, чтобы было тепло ножкам зимой."
+	},
+	"noski_0": {
+		"uuid_name": "noski_0",
+		"name": "Wool socks",
+		"description": "theyre obviously cozier.",
+		"description_ru": "В них явно уютнее."
+	},
+	"item-window_0": {
+		"uuid_name": "item-window_0",
+		"name": "Shutters",
+		"description": "Peps likes to work at the computer, so this thing is indispensable.",
+		"description_ru": "Пепс любит работать за компом, так что эта вещь незаменима."
+	}
+}
