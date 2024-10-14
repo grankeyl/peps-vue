@@ -9,7 +9,8 @@ export const TelegramStorage = defineStore('TelegramStorage', {
     UserUsername: '',
     UserPhoto: '',
     UserLanguage: '',
-    UserStartParam: ''
+    UserStartParam: '',
+    UserIsLanguage: '',
   }),
   actions: {
     // setters
@@ -37,6 +38,9 @@ export const TelegramStorage = defineStore('TelegramStorage', {
     setUserStartParam(data: any) {
       this.UserStartParam = data
     },
+    setUserIsPremium(data: any) {
+      this.UserIsLanguage = data
+    },
 
     // getters
     getUserId() {
@@ -62,6 +66,9 @@ export const TelegramStorage = defineStore('TelegramStorage', {
     },
     getUserStartParam() {
       return this.UserStartParam
+    },
+    getUserIsPremium() {
+      return this.UserIsLanguage
     }
   }
 })

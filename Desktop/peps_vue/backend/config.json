@@ -1,3 +1,14 @@
 {
-  "ROUTER_KEY": "/api"
+  "ROUTER_KEY": "/api",
+  "BOT_TOKEN": "5000799708:AAGSAhWwwy7qYRcHzfajAQfQv-qF6rcJnKA",
+  "DEVELOPER_STATUS": true,
+  "DOMAIN": "http://192.168.0.123:8080",
+  "DOMAIN_ORIG": "https://5ec6-95-59-121-213.ngrok-free.app",
+  "ADMINS_IDS": [
+    5000401812
+  ],
+  "LOGS_CHANNEL_ID": -1005000196871,
+  "SECRET_KEY": "FQ2(5&2*H^QwV",
+  "CHANNEL_RU_ID": -1005000770519,
+  "CHANNEL_EN_ID": -1005000574111
 }

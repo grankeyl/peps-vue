@@ -1,0 +1,52 @@
+{
+	"1": {
+		"gift_type": "money",
+		"gift_amount": 300,
+		"gift_skin": "None"
+	},
+	"2": {
+		"gift_type": "money",
+		"gift_amount": 500,
+		"gift_skin": "None"
+	},
+	"3": {
+		"gift_type": "money",
+		"gift_amount": 700,
+		"gift_skin": "None"
+	},
+	"4": {
+		"gift_type": "money",
+		"gift_amount": 1000,
+		"gift_skin": "None"
+	},
+	"5": {
+		"gift_type": "views",
+		"gift_amount": 1000,
+		"gift_skin": "None"
+	},
+	"6": {
+		"gift_type": "money",
+		"gift_amount": 5000,
+		"gift_skin": "None"
+	},
+	"7": {
+		"gift_type": "views",
+		"gift_amount": 3000,
+		"gift_skin": "None"
+	},
+	"8": {
+		"gift_type": "skin",
+		"gift_amount": 0,
+		"gift_skin": "cap_4"
+	},
+	"9": {
+		"gift_type": "money",
+		"gift_amount": 5000,
+		"gift_skin": "None"
+	},
+	"10": {
+		"gift_type": "skin",
+		"gift_amount": 0,
+		"gift_skin": "tee_3"
+	}
+}

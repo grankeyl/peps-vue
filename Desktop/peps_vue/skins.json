@@ -113,7 +113,7 @@
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "stars",
-					"shop_price_cost": 2,
+					"shop_price_cost": 450,
 					"shop_rare": "legendary",
 					"shop_upgrades_add_cost_views": 0,
 					"shop_upgrades_add_cost_money": 0,
@@ -1358,7 +1358,7 @@
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "stars",
-					"shop_price_cost": 2,
+					"shop_price_cost": 1100,
 					"shop_rare": "legendary",
 					"shop_upgrades_add_cost_views": 0,
 					"shop_upgrades_add_cost_money": 0,

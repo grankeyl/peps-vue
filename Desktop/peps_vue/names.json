@@ -23,6 +23,12 @@
 		"description": "The salesman at the store said its the best gamer keyboard out there.",
 		"description_ru": "Продавец в магазине сказал, что это лучшая клавиатура для геймеров."
 	},
+	"keyboard_4": {
+		"uuid_name": "keyboard_4",
+		"name": "Pepple keyboard",
+		"description": "Another unique example of the keyboards of the noughties.",
+		"description_ru": "Еще один неповторимый экземпляр клавиатур нулевых."
+	},
 	"systembox_0": {
 		"uuid_name": "systembox_0",
 		"name": "Vintage system box",
@@ -46,6 +52,12 @@
 		"name": "Exotic system box",
 		"description": "Hand-cut hole and diode strip to make it prettier (but not more powerful, bruh)",
 		"description_ru": "Вырезанное вручную отверстие и диодная лента, чтобы сделать его красивее (но не мощнее, bruh)"
+	},
+	"systembox_4": {
+		"uuid_name": "systembox_4",
+		"name": "Nice system box",
+		"description": "Thats kinda cool, but slowly a bit.",
+		"description_ru": "На самом деле он крутой, но немного медленный."
 	},
 	"monitors_0": {
 		"uuid_name": "monitors_0",
@@ -71,6 +83,12 @@
 		"description": "On special order from PepsGame inc.",
 		"description_ru": "По специальному заказу от PepsGame inc."
 	},
+	"monitors_4": {
+		"uuid_name": "monitors_4",
+		"name": "Pepple Monitor",
+		"description": "Rare and very valuable because of its futuristic nature.",
+		"description_ru": "Раритетный и очень ценный, из за своей футуристичности."
+	},
 	"mouse_0": {
 		"uuid_name": "mouse_0",
 		"name": "Stinky mouse",
@@ -94,6 +112,12 @@
 		"name": "Toy mouse",
 		"description": "Brutal, pink, for real men.",
 		"description_ru": "Брутальная, розовая, для настоящих мужчин."
+	},
+	"mouse_4": {
+		"uuid_name": "mouse_4",
+		"name": "Weird mouse",
+		"description": "If youre using that mouse, youre probably sick.",
+		"description_ru": "Если ты ее используешь эту мышку ты скорее всего больной"
 	},
 	"table_0": {
 		"uuid_name": "table_0",
@@ -119,6 +143,12 @@
 		"description": "Not a bad desk, not the best, but not used anymore either",
 		"description_ru": "Неплохой стол, не самый лучший, но и не самый худший."
 	},
+	"table_4": {
+		"uuid_name": "table_4",
+		"name": "Chill desk",
+		"description": "Just a wiby table, will fit any Peps",
+		"description_ru": "Просто вайбовый стол, подойдет к любому Пепсу"
+	},
 	"chair_0": {
 		"uuid_name": "chair_0",
 		"name": "Soviet chair",
@@ -142,6 +172,24 @@
 		"name": "Anotomic chair",
 		"description": "It looks a bit childish, but it's anatomical, with an adjustable backrest!",
 		"description_ru": "Он выглядит немного по-детски, но он анатомический, с регулируемой спинкой!"
+	},
+	"chair_4": {
+		"uuid_name": "chair_4",
+		"name": "Damn chair",
+		"description": "Finally! A chair with locking devices.",
+		"description_ru": "Наконец-то! Стул с подлокитниками!"
+	},
+	"chair_100": {
+		"uuid_name": "chair_100",
+		"name": "Stinky toilet",
+		"description": "You're a true connoisseur of art.",
+		"description_ru": "Вы настоящий ценитель искусства."
+	},
+	"chair_101": {
+		"uuid_name": "chair_101",
+		"name": "Golden toilet",
+		"description": "For real assholes!",
+		"description_ru": "Для настоящих засранцев!"
 	},
 	"cap_0": {
 		"uuid_name": "cap_0",
@@ -197,6 +245,12 @@
 		"description": "What are we doing in the middle of this damn desert?",
 		"description_ru": "Что мы делаем посреди этой проклятой пустыни?"
 	},
+	"cap_9": {
+		"uuid_name": "cap_9",
+		"name": "Honka cap",
+		"description": "The one and only Honka's clown hat! ",
+		"description_ru": "Единственная и неповторимая шапка клоуна Хонки! "
+	},
 	"eyes_0": {
 		"uuid_name": "eyes_0",
 		"name": "Kind eyes",
@@ -227,8 +281,8 @@
 		"description": "Sprouts from the vegetable garden outside the city.",
 		"description_ru": "Цветок с огорода за городом."
 	},
-	"flower_1": {
-		"uuid_name": "flower_1",
+	"item-floor_0": {
+		"uuid_name": "item-floor_0",
 		"name": "Fern",
 		"description": "A fern will add a cozy touch to your room, well, or turn it into an office.",
 		"description_ru": "Паппоротник добавит уюта в вашу комнату, ну или превратит ее в офис."
@@ -347,6 +401,12 @@
 		"description": "Now 30% of your hard earned $Peps will go to Apple and Google!",
 		"description_ru": "Теперь 30% заработанных вами денег будут уходить в Apple и Google!"
 	},
+	"posters_5": {
+		"uuid_name": "posters_5",
+		"name": "BETA Poster",
+		"description": "Only 1975 people have this poster and you are among them. Thank you for testing ",
+		"description_ru": "Этот постер имеют лишь 1975 человек и ты среди них. Спасибо за тестирование."
+	},
 	"rug_0": {
 		"uuid_name": "rug_0",
 		"name": "Mouse pad",
@@ -358,6 +418,18 @@
 		"name": "Skuf rug",
 		"description": "For real skufs",
 		"description_ru": "Для настоящих скуфов."
+	},
+	"rug_2": {
+		"uuid_name": "rug_2",
+		"name": "Pink pad",
+		"description": "Well, hes just handsome.",
+		"description_ru": "Ну, он просто красивый."
+	},
+	"rug_3": {
+		"uuid_name": "rug_3",
+		"name": "Blue pad",
+		"description": "I'm really stoned, ps: peperonl",
+		"description_ru": "Небесный коврик для мыши, отлично подходит к ретро-монитору."
 	},
 	"soplya-mouth_0": {
 		"uuid_name": "soplya-mouth_0",
@@ -388,6 +460,18 @@
 		"name": "Bat shirt",
 		"description": "«We had 2 bags of weed, 75 mescaline pills, 5 packs of acid..»",
 		"description_ru": "«У нас было 2 пакета травы, 75 таблеток мескалина, 5 упаковок кислоты..»"
+	},
+	"tee_4": {
+		"uuid_name": "tee_4",
+		"name": "Solid shirt",
+		"description": "Stylish and black shirt, nothing too fancy.",
+		"description_ru": "Стильная и черная рубашка, ничего лишнего."
+	},
+	"tee_5": {
+		"uuid_name": "tee_5",
+		"name": "Honka tee",
+		"description": "A stunning and unique butterfly t-shirt!",
+		"description_ru": "Потрясающая и неповторимая футболка с бабочкой!"
 	},
 	"wall_0": {
 		"uuid_name": "wall_0",

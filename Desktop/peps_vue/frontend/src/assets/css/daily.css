@@ -56,7 +56,6 @@
     width: 71px;
     height: 71px;
     border-radius: 12px;
-    border: 2px solid #3E67FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +72,6 @@
     width: 71px;
     height: 71px;
     border-radius: 12px;
-    border: 2px solid #3E67FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +195,7 @@
 
 .daily_buttons {
     width: 100%;
+    max-width: 450px;
     padding: 0px 14px;
     display: block;
     position: absolute;
@@ -238,6 +237,23 @@
     gap: 7px;
     font-size: 16px;
     font-weight: 500;
+}
+
+.daily_get_button img {
+    display: none;
+}
+
+.daily_get_button.active {
+    animation: clickButton .53s;
+}
+
+.daily_get_button.active img {
+    display: block;
+    animation: spin 1.5s linear infinite;
+}
+
+.daily_get_button.active p {
+    display: none;
 }
 
 .daily_rewards_item .upgrades_section_skins_item_left_skin {

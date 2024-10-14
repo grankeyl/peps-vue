@@ -1,0 +1,69 @@
+:root {
+    --background: #1C1C26;
+    --background_block: #252531;
+    --background_primary: #2E2E3B;
+    --background_nulled: #20202B;
+
+    --h_out: #D1D1DB;
+
+    --h: #BBBBCC;
+    --p: #9999AA;
+    --p_block: #7E7E8F;
+
+    --success: #4CBA97;
+    --error: #C44A4E;
+
+    --overlay: #00000099;
+    /* 60% прозрачность */
+
+    --border: #D1D1DB1A;
+    /* 10% прозрачность */
+}
+
+.c-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.c-slidingLoader {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.header-loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: none;
+    display: none;
+}
+
+.header-loading.active {
+    display: block;
+    animation: loading 1s infinite alternate cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.header-loading::before {
+    content: '';
+    display: block;
+    background-color: var(--success);
+    position: relative;
+    height: 100%;
+    width: 30%;
+    transform: translateX(-50%);
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

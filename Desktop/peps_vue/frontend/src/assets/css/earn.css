@@ -8,7 +8,7 @@
   padding-bottom: 150px;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInSlideUp 0.25s ease-in-out forwards;
+  animation: fadeInSlideUp 0.18s ease-in-out forwards;
 }
 
 .earn::-webkit-scrollbar {
@@ -45,6 +45,7 @@
 .earn_limited_task {
   height: 91px;
   padding: 0px 13px;
+  position: relative;
 }
 
 .earn_limited_task .upgrades_section_skins_item_left_info_title {
@@ -440,7 +441,29 @@
   display: none;
 }
 
-.earn_tasks_block_item_right button {
+.earn_tasks_block_item_right_button.completed {
+  width: 65px;
+  height: 33px;
+  background: linear-gradient(180deg, #3FEB8E 0%, #10733D 100%);
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+  color: var(--h);
+  font-weight: 600;
+}
+
+.earn_tasks_block_item_right_button.false {
+  width: 65px;
+  height: 33px;
+  background: linear-gradient(#00a3ff 5%, #1249b6);
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+  color: var(--h);
+  font-weight: 600;
+}
+
+.earn_tasks_block_item_right_button.in_progress {
   width: 65px;
   height: 33px;
   background: #2C3864;
@@ -451,10 +474,32 @@
   font-weight: 600;
 }
 
-.earn_tasks_block_item_left_image img {
+.earn_tasks_block_item_right_button.success {
+  width: 65px;
+  height: 33px;
+  background: #2C3864;
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+  color: var(--h);
+  font-weight: 600;
+}
+
+.earn_tasks_block_item_left_image {
   width: 46px;
   height: 46px;
-  border-radius: 9px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earn_tasks_block_item_left_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill !important;
+  display: block;
 }
 
 .upgrades_section.earn_tasks {
@@ -466,4 +511,105 @@
     transform: scale(0.84);
     transform-origin: top right;
   }
+}
+
+.story_task_button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.story_task_button.active button p, .story_task_button button span, .story_task_button button img:last-child {
+  display: none;
+}
+
+.story_task_button.active button img:first-child {
+  display: block;
+  animation: spin 1s linear infinite;
+}
+
+.story_task_button.active button img:last-child {
+  display: none;
+}
+
+.story_task_button.active button {
+  animation: clickButton .53s;
+}
+
+.story_task_button.closed button {
+  background: #5677f039;
+  pointer-events: none;
+}
+
+.story_task_button.closed button p, .story_task_button.closed button span, .story_task_button.closed button img:last-child {
+  pointer-events: none;
+  opacity: .3;
+}
+
+.story_task_button button {
+  display: flex;
+  border-radius: 14px;
+  border: none;
+  width: 100%;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(97deg, rgba(0, 194, 255, 0.88) -0.3%, rgba(172, 89, 255, 0.88) 59.89%, rgba(171, 90, 255, 0.88) 77.87%);
+  color: var(--h);
+  gap: 5px;
+}
+
+.story_task_button button p {
+  width: fit-content;
+}
+
+.story_task_button button img:first-child {
+  width: 19px;
+  height: 19px;
+  display: none;
+}
+
+.story_task_button button img:last-child {
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+
+.story_tasks_line {
+  width: 45%;
+  height: 1px;
+  background: #1B253E;
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.earn_friends_invited {
+  width: 100%;
+  height: 50px;
+  background: #4461c922;
+  border-radius: 16px;
+}
+
+.earn_friends_invited_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px 0 19px;
+}
+
+.earn_friends_invited_inner_text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.earn_friends_invited_inner_photo img {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  object-fit: fill !important;
 }

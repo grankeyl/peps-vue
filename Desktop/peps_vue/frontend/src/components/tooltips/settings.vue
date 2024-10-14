@@ -1,21 +1,49 @@
 <script lang="ts">
-import { ref, defineComponent, watch, computed } from 'vue'
+import { ref, defineComponent, onMounted, onUnmounted, watch, computed } from 'vue'
 import { UserStorage } from '@/stores/userStore'
-
 import { setSettings } from '@/utils/apiRequest'
+
+import { TelegramStorage } from '@/stores/telegramStore'
+import { localText } from '@/interface'
+
+const isShowSettings = ref(false)
+
+export function showSettings() {
+  return isShowSettings.value
+}
+
+export async function toggleSettings() {
+  isShowSettings.value = !isShowSettings.value
+}
 
 export default defineComponent({
   props: {
     show: {
       type: Boolean,
       required: true
+    },
+    langActive: {
+      type: Boolean,
+      required: true
     }
   },
   setup(props) {
+    const namePage = 'settings'
+
     const userStorage = UserStorage()
+    const telegramStorage = TelegramStorage()
+
+    const userDataSettings = computed(() => {
+      const settings = userStorage.settings || {};
+      return {
+        ...settings,
+        language: settings.language || telegramStorage.getUserLanguage() || 'en'
+      };
+    });
 
     const settingsTooltipVisible = ref(props.show)
     const languagesActive = ref(false)
+    const tooltipRef = ref<HTMLElement | null>(null)
 
     watch(
       () => props.show,
@@ -32,7 +60,7 @@ export default defineComponent({
     )
 
     const toggleSettingsTooltip = async () => {
-      if (!settingsTooltipVisible) settingsTooltipVisible.value = !settingsTooltipVisible.value
+      settingsTooltipVisible.value = !settingsTooltipVisible.value
     }
 
     const toggleLang = () => {
@@ -49,32 +77,44 @@ export default defineComponent({
     })
 
     const changeLanguage = async (language: string) => {
-      if (userStorage.settings.language == 'ru') {
-        userStorage.settings.language = 'en'
-      } else {
-        userStorage.settings.language = 'ru'
-      }
-      const result = await setSettings(
+      userStorage.settings.language = language
+      await setSettings(
         userStorage.user.user_id,
         userStorage.settings.language,
         userStorage.settings.tap_animation
       )
-
       languagesActive.value = false
       settingsTooltipVisible.value = false
+      isShowSettings.value = !isShowSettings.value
+      localStorage.setItem('languageUser', language)
     }
 
     const changeTapAnimation = async () => {
       userStorage.settings.tap_animation = !userStorage.settings.tap_animation
-
-      const result = await setSettings(
+      await setSettings(
         userStorage.user.user_id,
         userStorage.settings.language,
         userStorage.settings.tap_animation
       )
-      
       languagesActive.value = false
     }
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (tooltipRef.value && !tooltipRef.value.contains(event.target as Node)) {
+        settingsTooltipVisible.value = false
+        isShowSettings.value = false
+      }
+    }
+
+    onMounted(() => {
+      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('touchstart', handleClickOutside)
+    })
+
+    onUnmounted(() => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('touchstart', handleClickOutside)
+    })
 
     return {
       settingsTooltipVisible,
@@ -84,34 +124,37 @@ export default defineComponent({
       changeTapAnimation,
       statusLanguage,
       statusTapAnimation,
-      toggleLang
+      toggleLang,
+      tooltipRef,
+
+      namePage,
+      userDataSettings,
+      localText
     }
   }
 })
 </script>
 
 <template>
-  <div v-if="settingsTooltipVisible">
+  <div v-if="settingsTooltipVisible" ref="tooltipRef">
     <div class="settings_tooltip active">
       <div class="settings_tooltip_item">
-        <p>Settings</p>
+        <p>{{ localText[namePage][userDataSettings.language].se_text_1 }}</p>
       </div>
       <div class="settings_tooltip_item_lead">
         <div class="settings_tooltip_item_lead_title">
-          <p>Language</p>
+          <p>{{ localText[namePage][userDataSettings.language].se_text_4 }}</p>
         </div>
         <div @click="toggleLang()" class="settings_tooltip_item_lead_flag">
           <img v-if="statusLanguage == 'ru'" src="../../assets/img/russian.png" alt="ru" />
           <img v-else src="../../assets/img/english.png" alt="en" />
-
           <span v-if="statusLanguage == 'ru'">Русский</span>
           <span v-else>English</span>
-
           <img src="../../assets/img/chevron_down.svg" alt="chevron_down" />
         </div>
       </div>
       <div class="settings_tooltip_item">
-        <p>Tap Animations</p>
+        <p>{{ localText[namePage][userDataSettings.language].se_text_3 }}</p>
         <label class="switch">
           <input
             v-if="statusTapAnimation"
@@ -120,10 +163,7 @@ export default defineComponent({
             id="tapAnimationsToggle"
             @change="changeTapAnimation"
           />
-          <input 
-          v-else 
-          type="checkbox" 
-          id="tapAnimationsToggle" @change="changeTapAnimation" />
+          <input v-else type="checkbox" id="tapAnimationsToggle" @change="changeTapAnimation" />
           <span class="switch_slider"></span>
         </label>
       </div>

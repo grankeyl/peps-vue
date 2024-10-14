@@ -1,0 +1,141 @@
+{
+	"case_1": {
+		"chest_name": "Pep's case",
+		"chest_name_ru": "Пепс кейс",
+		"chest_image": "money_three.riv",
+		"chest_description": "Spin case and win valued prizes!",
+		"chest_description_ru": "Крути рулетку и выигрывай ценные награды!",
+		"chest_buy_type": "stars",
+		"chest_buy_amount": 1,
+		"chest_prizes": {
+			"rare": {
+				"money": [
+					{
+						"prize": "money:500",
+						"prize_chance": 60
+					},
+					{
+						"prize": "money:700",
+						"prize_chance": 60
+					},
+					{
+						"prize": "money:1000",
+						"prize_chance": 60
+					}
+				],
+				"basic_skins": {
+					"prize": "basic_skin",
+					"prize_chance": 22
+				},
+				"rare_skins": {
+					"prize": "SKIN_ID_LOL",
+					"prize_chance": 10
+				}
+			},
+			"very_rare": {
+				"money": [
+					{
+						"prize": "money:1500",
+						"prize_chance": 5
+					},
+					{
+						"prize": "money:3000",
+						"prize_chance": 5
+					},
+					{
+						"prize": "money:5000",
+						"prize_chance": 5
+					},
+					{
+						"prize": "money:10000",
+						"prize_chance": 5
+					},
+					{
+						"prize": "money:25000",
+						"prize_chance": 5
+					},
+					{
+						"prize": "money:40000",
+						"prize_chance": 5
+					}
+				],
+				"TON": [
+					{
+						"prize": "ton:0.01",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.025",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.05",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.1",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.2",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.35",
+						"prize_chance": 1.5
+					},
+					{
+						"prize": "ton:0.5",
+						"prize_chance": 1.5
+					}
+				],
+				"very_rare_skins": {
+					"prize": "SKIN_ID_LOL",
+					"prize_chance": 1
+				}
+			},
+			"epic": {
+				"money": [
+					{
+						"prize": "money:100000",
+						"prize_chance": 0.2
+					},
+					{
+						"prize": "money:500000",
+						"prize_chance": 0.2
+					},
+					{
+						"prize": "money:1000000",
+						"prize_chance": 0.2
+					}
+				],
+				"ton": [
+					{
+						"prize": "ton:1",
+						"prize_chance": 0.2
+					},
+					{
+						"prize": "ton:2",
+						"prize_chance": 0.2
+					},
+					{
+						"prize": "ton:5",
+						"prize_chance": 0.2
+					},
+					{
+						"prize": "ton:10",
+						"prize_chance": 0.2
+					}
+				],
+				"epic_skins": {
+					"prize": "SKIN_ID_LOL",
+					"prize_chance": 0.09
+				},
+				"legendary_skins": {
+					"prize": "SKIN_ID_LOL",
+					"prize_chance": 0.01
+				}
+			}
+		}
+	}
+}

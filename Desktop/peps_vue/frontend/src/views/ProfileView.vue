@@ -1,37 +1,94 @@
 <script lang="ts">
 import { UserStorage } from '@/stores/userStore'
-import { defineComponent, computed, ref, onMounted, onBeforeUnmount } from 'vue'
+import { defineComponent, computed, ref } from 'vue'
 import { TelegramStorage } from '@/stores/telegramStore'
-import { buy, updateChances, setSettings, getSkins } from '@/utils/apiRequest'
+import { settingsTelegram } from '@/composables/useTelegramSetup'
+import {
+  getUser,
+  buy,
+  updateChances,
+  getSkins,
+  changeSkin,
+  unPutSkin,
+  getAvatar
+} from '@/utils/apiRequest'
 import { formatNumber, getImage, getRare } from '@/utils/funcs'
 
-import SettingsTooltip from '@/components/tooltips/settings.vue'
+import { showSettings, toggleSettings } from '@/components/tooltips/settings.vue'
+import { RouterLink } from 'vue-router'
+
+import { localText } from '@/interface'
+
+import Preview_ProfileItem from "@/views/improves/Preview_ProfileItem.vue";
+
 export default defineComponent({
   components: {
-    SettingsTooltip
+    Preview_ProfileItem,
   },
   setup() {
+    const namePage = 'profile'
+
     const telegramStorage = TelegramStorage()
     const useUserStore = UserStorage()
 
-    const isShowSettings = ref(false)
+    const toast1 = ref(false)
+
+    const userDataSettings = computed(() => {
+      const settings = useUserStore.settings || {};
+      return {
+        ...settings,
+        language: settings.language || telegramStorage.getUserLanguage() || 'en'
+      };
+    });
 
     const userData = computed(() => useUserStore.user || {})
     const userCosts = computed(() => useUserStore.costs || {})
+
+    const userDataRef = ref(useUserStore.user)
+    const userCostsRef = ref(useUserStore.costs)
+
     const userSettings = computed(() => useUserStore.settings || {})
+    const userTelegram = computed(() => telegramStorage || {})
+    const profileAvatar = ref('')
     const userSkins = ref([])
     const categories = ref([])
     const isTooltipActive = ref(false)
     const isButtonDisabled = ref(false)
     const isButtonLoading = ref(false)
-    const settingsButton = ref<HTMLButtonElement | null>(null)
-    const settingsTooltip = ref<HTMLElement | null>(null)
+    const loaderStatusPage = ref(true)
+
+    const isShowSettings = ref(false)
 
     const oldTapAnimation = ref(false)
     const oldLanguage = ref('en')
 
     const categorySkins = ref([])
-    const activeCategory = ref('Wear')
+
+    if (!localStorage.getItem('ProfileCategory')) {
+      localStorage.setItem('ProfileCategory', 'Wear')
+    }
+    const activeCategory = ref(localStorage.getItem('ProfileCategory'))
+    const activeCategorySkin = ref([])
+
+    const bandlesCreated = async () => {
+      const response = await getUser(userData.value.user_id)
+
+      if (response.success) {
+        userCostsRef.value.views_costs = response.data.costs.views_costs
+        userCostsRef.value.money_costs = response.data.costs.money_costs
+        userCostsRef.value.stamina_costs = response.data.costs.stamina_costs
+        return true
+      } else {
+        return false
+      }
+    }
+
+    const bandlesCreatedInterval = setInterval(async () => {
+      const bandlesCreatedData = await bandlesCreated()
+      if (bandlesCreatedData) {
+        clearInterval(bandlesCreatedInterval)
+      }
+    }, 300)
 
     const toggleTooltipSettings = (event: MouseEvent) => {
       document.querySelector('.settings_tooltip')?.classList.toggle('active')
@@ -100,7 +157,7 @@ export default defineComponent({
       }
 
       const buyResult = await buyItem('views', profile_post_cost)
-      profile_post_cost = (profile_post_cost * 1.3 + Math.random() * 0.7).toFixed(0)
+      profile_post_cost = (profile_post_cost * 1.6).toFixed(0)
 
       const result = await updateChances(
         userData.value.user_id,
@@ -195,21 +252,13 @@ export default defineComponent({
       return views_chance + money_chance === 100
     }
 
-    const showSettings = () => {
-      return isShowSettings.value
-    }
-
-    const toggleSettings = async () => {
-      isShowSettings.value = !isShowSettings.value
-    }
-
     const fetchSkins = async () => {
       const response = await getSkins(userData.value.user_id)
       if (response.success) {
         if (response.skins.length !== 0) {
           userSkins.value = response.skins
           categories.value = response.categories
-          setActiveCategory('Wear')
+          setActiveCategory(activeCategory.value)
           clearInterval(interval)
           return true
         } else {
@@ -226,16 +275,166 @@ export default defineComponent({
 
     const setActiveCategory = (category: string) => {
       categorySkins.value = []
+      activeCategorySkin.value = []
       filterSkins(category)
       activeCategory.value = category
+      localStorage.setItem('ProfileCategory', activeCategory.value)
     }
 
     const filterSkins = (category) => {
       userSkins.value.forEach((element) => {
-        if (element.skin_category === category.toLowerCase() && element.profile_show) {
+        if (
+          (element.skin_category === category.toLowerCase() && element.profile_show) ||
+          (element.skin_category.startsWith(category.toLowerCase() + '_items') &&
+            element.profile_show)
+        ) {
+          if (element.skin_status === true) {
+            activeCategorySkin.value.push(element)
+          }
           categorySkins.value.push(element)
         }
       })
+
+      activeCategorySkin.value.sort((a, b) => {
+        if (a.skin_name && b.skin_name) {
+          return a.skin_name.localeCompare(b.skin_name)
+        }
+        return 0
+      })
+
+      categorySkins.value.sort((a, b) => {
+        if (a.skin_name && b.skin_name) {
+          return a.skin_name.localeCompare(b.skin_name)
+        }
+        return 0
+      })
+
+      loaderStatusPage.value = false
+    }
+
+    const putSkinProfile = async (skin) => {
+      const response = await changeSkin(userData.value.user_id, skin.skin_id)
+
+      if (response.success) {
+        userCostsRef.value.views_costs = response.costs.views_costs
+        userCostsRef.value.money_costs = response.costs.money_costs
+        userCostsRef.value.stamina_costs = response.costs.stamina_costs
+
+        let index = -1
+        let founded = false
+        for (const item of activeCategorySkin.value) {
+          index++
+          try {
+            if (item.skin_category.toLowerCase() == skin.skin_category.toLowerCase()) {
+              founded = true
+              break
+            }
+          } catch {
+            continue
+          }
+        }
+
+        if (founded == true) {
+          console.log(activeCategorySkin.value[index])
+          delete activeCategorySkin.value[index]
+        }
+
+        activeCategorySkin.value.push(skin)
+      }
+    }
+
+    const unPutSkinProfile = async (skin) => {
+      if (skin.skin_take == true) {
+        const response = await unPutSkin(userData.value.user_id, skin.skin_id)
+
+        if (response.success) {
+          userCostsRef.value.views_costs = response.costs.views_costs
+          userCostsRef.value.money_costs = response.costs.money_costs
+          userCostsRef.value.stamina_costs = response.costs.stamina_costs
+
+          let index = -1
+          for (const item of activeCategorySkin.value) {
+            index++
+            if (item === skin) {
+              break
+            }
+          }
+          delete activeCategorySkin.value[index]
+        }
+      }
+    }
+
+    function getActiveSkin() {
+      computed(() => {
+        return activeCategorySkin.value.skin_id
+      })
+    }
+
+    const settingsOpen = () => {
+      settingsTelegram(toggleSettings, 'profile')
+    }
+
+    const getAvatarImage = () => {
+      const intervalAvatar = setInterval(async () => {
+        const response = await getAvatar(userData.value.user_id)
+        if (response.success) {
+          profileAvatar.value = response.avatar
+          clearInterval(intervalAvatar)
+        }
+      }, 1000)
+    }
+
+    getAvatarImage()
+
+    const connectWallet = () => {
+      console.log(1)
+      toast1.value = true
+      setTimeout(() => {
+        toast1.value = false
+      }, 3200)
+    }
+        const previewSkin = ref({
+      status: false,
+      item: null,
+      skin_id: null,
+      title: null,
+      description: null,
+      description_ru: null,
+      rarity: null,
+      price_type: null,
+      price: null,
+      quantity_count: null,
+      quantity_need: null,
+      language_user: null,
+      baffs: null
+    })
+
+    const previewSkinOpen = (skin) => {
+      const previewSkinBlock = document.getElementById(`previewSkin#${skin.skin_id}`)
+
+      if (previewSkinBlock.classList.contains('clicked')) {
+        return
+      } else {
+        previewSkinBlock.classList.add('clicked')
+      }
+
+      setTimeout(() => {
+        previewSkinBlock.classList.remove('clicked')
+      }, 210)
+
+      previewSkin.value.item = skin
+      previewSkin.value.skin_id = skin.skin_id
+      previewSkin.value.title = skin.name
+      previewSkin.value.description = skin.description
+      previewSkin.value.description_ru = skin.description_ru
+      previewSkin.value.rarity = skin.skin_rare
+      previewSkin.value.price_type = skin.skin_shop.shop_price_type
+      previewSkin.value.price = skin.skin_shop.shop_price_cost
+      previewSkin.value.quantity_count = skin.skin_quantity_need-skin.skin_quantity_count
+      previewSkin.value.quantity_need = skin.skin_quantity_need
+      previewSkin.value.language_user = userDataSettings.value.language
+      previewSkin.value.baffs = skin.skin_baffs
+      previewSkin.value.status = true
     }
 
     return {
@@ -247,35 +446,77 @@ export default defineComponent({
       isEnough,
       isMax,
       formatNumber,
-      toggleTooltipSettings,
-      settingsTooltip,
-      toggleTooltipSettings,
-      isShowSettings,
-      showSettings,
-      toggleSettings,
       categories,
       activeCategory,
+      activeCategorySkin,
       setActiveCategory,
       userSkins,
       getImage,
       getRare,
-      categorySkins
+      categorySkins,
+      loaderStatusPage,
+      putSkinProfile,
+      unPutSkinProfile,
+      getActiveSkin,
+      toggleSettings,
+      settingsOpen,
+      isShowSettings,
+      showSettings,
+      settingsTelegram,
+      profileAvatar,
+      userTelegram,
+      toast1,
+      connectWallet,
+      previewSkin,
+      previewSkinOpen,
+
+      namePage,
+      userDataSettings,
+      localText
     }
   }
 })
 </script>
 
 <template>
+
+  <div id="toast_1" :class="toast1 ? 'show' : ''" class="toast purchase">
+    {{ localText['root'][userDataSettings.language].root_text_18 }}
+  </div>
+  
+  <Preview_ProfileItem
+    v-if="previewSkin.status == true"
+    :status="previewSkin.status"
+    :skin_id="previewSkin.skin_id"
+    :title="previewSkin.title"
+    :description="previewSkin.description"
+    :description_ru="previewSkin.description_ru"
+    :rarity="previewSkin.rarity"
+    :price_type="previewSkin.price_type"
+    :price="previewSkin.price"
+    :quantity_count="previewSkin.quantity_count"
+    :quantity_need="previewSkin.quantity_need"
+    :language_user="previewSkin.language_user"
+    :baffs_object="previewSkin.baffs"
+    :baffs="getRare(previewSkin.language_user, previewSkin.baffs.baffs_buy_type, previewSkin.baffs.baffs_buy_percentage)"
+    :localText="localText"
+    @closeModal="previewSkin.status = false"
+  />
+
   <div class="profile">
     <div class="profile_inner">
-      <SettingsTooltip :show="showSettings()" :langActive="true" />
-
       <div class="profile_user" style="position: relative">
         <div class="profile_user_head">
           <div class="profile_user_head_avatar skeleton rounded">
-            <img src="./../assets/img/default_avatar.png" alt="" />
+            <img v-if="!profileAvatar" src="./../assets/img/default_avatar.png" alt="" />
+            <img
+              v-if="profileAvatar && profileAvatar == 'None'"
+              src="./../assets/img/default_avatar.png"
+              alt=""
+            />
+            <img v-if="profileAvatar && profileAvatar != 'None'" :src="profileAvatar" alt="" />
           </div>
-          <div @click="toggleSettings" class="profile_user_head_settings skeleton rounded">
+          <div @click="settingsOpen" class="profile_user_head_settings skeleton rounded">
             <svg
               width="18"
               height="18"
@@ -302,18 +543,25 @@ export default defineComponent({
         </div>
 
         <div class="profile_user_name">
-          <p class="profile_user_name_grip">{{ userData.full_name }}</p>
-          <span>{{ userData.level }} lvl</span>
+          <p class="profile_user_name_grip">{{ userTelegram.getUserFullName() }}</p>
+          <span
+            >{{ userData.level }}
+            {{ localText[namePage][userDataSettings.language].pr_text_1 }}</span
+          >
         </div>
       </div>
 
       <div class="profile_bands">
         <div class="profile_band">
-          <img style="object-fit: contain;" src="./../assets/img/eye.svg" alt="" />
+          <div class="profile_band_img profile_band_img_1">
+            <img src="./../assets/img/eye.svg" alt="" />
+          </div>
           <p>{{ userCosts.views_costs }}</p>
         </div>
         <div class="profile_band">
-          <img style="object-fit: contain;" src="./../assets/img/money.svg" alt="" />
+          <div class="profile_band_img profile_band_img_2">
+            <img src="./../assets/img/money.svg" alt="" />
+          </div>
           <p>{{ userCosts.money_costs }}</p>
         </div>
         <div class="profile_band" style="display: none">
@@ -321,17 +569,19 @@ export default defineComponent({
           <p><b>#</b><small>100</small></p>
         </div>
         <div class="profile_band">
-          <img style="object-fit: contain;" src="./../assets/img/energy.svg" alt="" />
+          <div class="profile_band_img profile_band_img_3">
+            <img src="./../assets/img/energy.svg" alt="" />
+          </div>
           <p>{{ userCosts.stamina_costs }}</p>
         </div>
       </div>
 
       <div class="profile_connect_wallet">
-        <div class="profile_connect_wallet_button">
-          <button class="profile_connect_wallet_button_button" onclick="showToast_1()">
+        <div @click="connectWallet" class="profile_connect_wallet_button">
+          <button class="profile_connect_wallet_button_button">
             <div class="profile_connect_wallet_button_button_center">
               <img src="./../assets/img/diamond_connect_wallet.svg" alt="" />
-              <p>Connect wallet</p>
+              <p>{{ localText[namePage][userDataSettings.language].pr_text_2 }}</p>
             </div>
           </button>
         </div>
@@ -342,7 +592,9 @@ export default defineComponent({
           <div class="upgrades_section_skins_item_left">
             <div class="upgrades_section_skins_item_left_info">
               <div class="upgrades_section_skins_item_left_info_title">
-                <h4 style="max-width: 147px">Post chance</h4>
+                <h4 style="max-width: 147px">
+                  {{ localText[namePage][userDataSettings.language].pr_text_3 }}
+                </h4>
                 <div class="upgrades_section_skins_item_left_info_post_chance">
                   <span>+10%</span>
                 </div>
@@ -363,6 +615,7 @@ export default defineComponent({
 
             <div class="upgrades_section_skins_item_right_upgrade">
               <div
+                v-if="userData.level >= 10"
                 @click="UpgradePost('Default')"
                 id="UpgradePostDefault"
                 class="upgrades_section_skins_item_right_upgrade_btn upgrades_section_skins_item_right_upgrade_btn_profile_post_chance"
@@ -378,8 +631,35 @@ export default defineComponent({
                       src="./../assets/img/button_loading.svg"
                       alt="loading"
                     />
-                    <p v-if="!isMax('Default')">Upgrade</p>
-                    <p v-else>Max level</p>
+                    <p v-if="!isMax('Default')">
+                      {{ localText[namePage][userDataSettings.language].pr_text_5 }}
+                    </p>
+                    <p v-else>{{ localText[namePage][userDataSettings.language].pr_text_6 }}</p>
+                  </div>
+                </button>
+              </div>
+
+              <div
+                v-if="userData.level < 10"
+                class="upgrades_section_skins_item_right_upgrade_btn upgrades_section_skins_item_right_upgrade_btn_profile_post_chance disabled"
+              >
+                <button style="width: 85px" id="">
+                  <div class="shop_section_buy_items_item_buy_button_info">
+                    <svg
+                      width="12"
+                      height="14"
+                      viewBox="0 0 12 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.0315 2.28189C5.38782 1.92557 5.87109 1.72539 6.375 1.72539C6.87891 1.72539 7.36218 1.92557 7.7185 2.28189C8.07482 2.63821 8.275 3.12148 8.275 3.62539V5.52539H4.475V3.62539C4.475 3.12148 4.67518 2.63821 5.0315 2.28189ZM9.875 3.62539V5.52902C10.3996 5.55956 10.8966 5.78147 11.2703 6.15511C11.6735 6.55831 11.9 7.10517 11.9 7.67539V11.7254C11.9 12.2956 11.6735 12.8425 11.2703 13.2457C10.8671 13.6489 10.3202 13.8754 9.75 13.8754H3C2.42978 13.8754 1.88292 13.6489 1.47972 13.2457C1.07652 12.8425 0.85 12.2956 0.85 11.7254V7.67539C0.85 7.10517 1.07652 6.55831 1.47972 6.15511C1.85336 5.78147 2.35037 5.55956 2.875 5.52902V3.62539C2.875 2.69713 3.24375 1.80689 3.90013 1.15052C4.5565 0.494139 5.44674 0.125391 6.375 0.125391C7.30326 0.125391 8.1935 0.494139 8.84987 1.15052C9.50625 1.80689 9.875 2.69713 9.875 3.62539ZM3.675 7.12539H9.075H9.75C9.89587 7.12539 10.0358 7.18334 10.1389 7.28648C10.2421 7.38963 10.3 7.52952 10.3 7.67539V11.7254C10.3 11.8713 10.2421 12.0112 10.1389 12.1143C10.0358 12.2174 9.89587 12.2754 9.75 12.2754H3C2.85413 12.2754 2.71424 12.2174 2.61109 12.1143C2.50795 12.0112 2.45 11.8713 2.45 11.7254V7.67539C2.45 7.52952 2.50795 7.38963 2.61109 7.28648C2.71424 7.18334 2.85413 7.12539 3 7.12539H3.675Z"
+                        fill="#697293"
+                      />
+                    </svg>
+                    <p>10 {{ localText[namePage][userDataSettings.language].pr_text_1 }}</p>
                   </div>
                 </button>
               </div>
@@ -401,7 +681,9 @@ export default defineComponent({
           <div class="upgrades_section_skins_item_left">
             <div class="upgrades_section_skins_item_left_info">
               <div class="upgrades_section_skins_item_left_info_title">
-                <h4 style="max-width: 147px">AFK post chance</h4>
+                <h4 style="max-width: 147px">
+                  {{ localText[namePage][userDataSettings.language].pr_text_4 }}
+                </h4>
                 <div class="upgrades_section_skins_item_left_info_post_chance">
                   <span>+10%</span>
                 </div>
@@ -424,6 +706,7 @@ export default defineComponent({
 
             <div class="upgrades_section_skins_item_right_upgrade">
               <div
+                v-if="userData.level >= 10"
                 @click="UpgradePost('Afk')"
                 id="UpgradePostAfk"
                 class="upgrades_section_skins_item_right_upgrade_btn upgrades_section_skins_item_right_upgrade_btn_profile_post_chance"
@@ -439,11 +722,39 @@ export default defineComponent({
                       src="./../assets/img/button_loading.svg"
                       alt="loading"
                     />
-                    <p v-if="!isMax('Afk')">Upgrade</p>
-                    <p v-else>Max level</p>
+                    <p v-if="!isMax('Afk')">
+                      {{ localText[namePage][userDataSettings.language].pr_text_5 }}
+                    </p>
+                    <p v-else>{{ localText[namePage][userDataSettings.language].pr_text_6 }}</p>
                   </div>
                 </button>
               </div>
+
+              <div
+                v-if="userData.level < 10"
+                class="upgrades_section_skins_item_right_upgrade_btn upgrades_section_skins_item_right_upgrade_btn_profile_post_chance disabled"
+              >
+                <button style="width: 85px" id="">
+                  <div class="shop_section_buy_items_item_buy_button_info">
+                    <svg
+                      width="12"
+                      height="14"
+                      viewBox="0 0 12 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.0315 2.28189C5.38782 1.92557 5.87109 1.72539 6.375 1.72539C6.87891 1.72539 7.36218 1.92557 7.7185 2.28189C8.07482 2.63821 8.275 3.12148 8.275 3.62539V5.52539H4.475V3.62539C4.475 3.12148 4.67518 2.63821 5.0315 2.28189ZM9.875 3.62539V5.52902C10.3996 5.55956 10.8966 5.78147 11.2703 6.15511C11.6735 6.55831 11.9 7.10517 11.9 7.67539V11.7254C11.9 12.2956 11.6735 12.8425 11.2703 13.2457C10.8671 13.6489 10.3202 13.8754 9.75 13.8754H3C2.42978 13.8754 1.88292 13.6489 1.47972 13.2457C1.07652 12.8425 0.85 12.2956 0.85 11.7254V7.67539C0.85 7.10517 1.07652 6.55831 1.47972 6.15511C1.85336 5.78147 2.35037 5.55956 2.875 5.52902V3.62539C2.875 2.69713 3.24375 1.80689 3.90013 1.15052C4.5565 0.494139 5.44674 0.125391 6.375 0.125391C7.30326 0.125391 8.1935 0.494139 8.84987 1.15052C9.50625 1.80689 9.875 2.69713 9.875 3.62539ZM3.675 7.12539H9.075H9.75C9.89587 7.12539 10.0358 7.18334 10.1389 7.28648C10.2421 7.38963 10.3 7.52952 10.3 7.67539V11.7254C10.3 11.8713 10.2421 12.0112 10.1389 12.1143C10.0358 12.2174 9.89587 12.2754 9.75 12.2754H3C2.85413 12.2754 2.71424 12.2174 2.61109 12.1143C2.50795 12.0112 2.45 11.8713 2.45 11.7254V7.67539C2.45 7.52952 2.50795 7.38963 2.61109 7.28648C2.71424 7.18334 2.85413 7.12539 3 7.12539H3.675Z"
+                        fill="#697293"
+                      />
+                    </svg>
+                    <p>10 {{ localText[namePage][userDataSettings.language].pr_text_1 }}</p>
+                  </div>
+                </button>
+              </div>
+
               <div
                 id="afk_post_chance_upgrade_profile_text_summary"
                 class="upgrades_section_skins_item_right_upgrade_summary upgrades_section_skins_item_right_upgrade_summary_profile"
@@ -460,7 +771,14 @@ export default defineComponent({
 
       <div class="profile_c">
         <div class="upgrades_section_title">
-          <h4>Skins</h4>
+          <h4>{{ localText[namePage][userDataSettings.language].pr_text_7 }}</h4>
+        </div>
+
+        <div
+          v-if="loaderStatusPage"
+          style="margin: auto; text-align: center; align-items: center; padding: 60px 0px"
+        >
+          <div class="jumping-dots-loader"><span></span> <span></span> <span></span></div>
         </div>
 
         <div class="profile_categories">
@@ -469,7 +787,7 @@ export default defineComponent({
             @click="setActiveCategory(category)"
             :class="['profile_category', category === activeCategory ? 'active' : '']"
           >
-            <p>{{ category }}</p>
+            <p>{{ localText['categories'][category.toLowerCase()][userDataSettings.language] }}</p>
           </div>
         </div>
 
@@ -482,41 +800,69 @@ export default defineComponent({
                   skin.skin_rare,
                   'shop_section_skins_item_skin'
                 ]"
+                :id="'previewSkin#' + skin.skin_id"
               >
-                <div class="shop_section_skins_item_skin_inner">
+                <div 
+                  @click="previewSkinOpen(skin)"
+                  class="shop_section_skins_item_skin_inner"
+                >
                   <img src="./../assets/img/upgrades_effect.png" alt="upgrades_effect" />
                   <img :src="getImage(skin.skin_id)" alt="skin" />
                 </div>
-                <p v-if="skin.skin_baffs.baffs_type == false">Basic</p>
+                <p v-if="skin.skin_baffs.baffs_type == false">
+                  {{ localText['root'][userDataSettings.language].root_text_6 }}
+                </p>
                 <p v-else>
                   {{
-                    getRare(skin.skin_baffs.baffs_buy_type, skin.skin_baffs.baffs_buy_percentage)
+                    getRare(
+                      userDataSettings.language,
+                      skin.skin_baffs.baffs_buy_type,
+                      skin.skin_baffs.baffs_buy_percentage
+                    )
                   }}
                 </p>
               </div>
+
+              <div class="shop_skin_quantity">
+                <div v-if="skin.skin_quantity_need > 0" class="shop_skin_quantity_inner">
+                  <p>1</p>
+                  <p>/</p>
+                  <p>{{ formatNumber(skin.skin_quantity_need) }}</p>
+                </div>
+                <div v-else class="shop_skin_quantity_inner_none">
+                  <p>∞</p>
+                </div>
+              </div>
+
               <div class="shop_section_skins_item_left_info">
                 <div class="shop_section_skins_item_title">
                   <h4>{{ skin.name }}</h4>
                 </div>
 
                 <div
-                  v-if="skin.skin_status == false"
+                  :id="'putSkinButton#' + skin.skin_id"
                   class="shop_section_buy_items_item_buy shop_section_skins_item_buy upgrades_section_skins_item_right_upgrade_btn actived"
                 >
-                  <button style="width: 95%; margin-bottom: 0; height: 37px" id="profile_putting|">
+                  <button
+                    v-if="!activeCategorySkin.includes(skin)"
+                    @click="putSkinProfile(skin)"
+                    style="width: 95%; margin-bottom: 0; height: 37px"
+                    id="profile_putting|"
+                  >
                     <div class="shop_section_buy_items_item_buy_button_info">
                       <img
                         class="button_loading_img"
                         src="./../assets/img/button_loading.svg"
                         alt="loading"
                       />
-                      <p>Put on</p>
+                      <p>{{ localText[namePage][userDataSettings.language].pr_text_13 }}</p>
                     </div>
                   </button>
                 </div>
-
                 <div
-                  v-if="skin.skin_status == true"
+                  v-if="activeCategorySkin.includes(skin)"
+                  :id="'unputSkinButton#' + skin.skin_id"
+                  @click="unPutSkinProfile(skin)"
                   class="shop_section_buy_items_item_buy shop_section_skins_item_buy upgrades_section_skins_item_right_upgrade_btn disabled"
                 >
                   <button style="width: 95%; margin-bottom: 0; height: 37px" id="profile_putting|">
@@ -526,28 +872,32 @@ export default defineComponent({
                         src="./../assets/img/button_loading.svg"
                         alt="loading"
                       />
-                      <p>Enabled</p>
+                      <p>{{ localText[namePage][userDataSettings.language].pr_text_14 }}</p>
                     </div>
                   </button>
                 </div>
               </div>
             </div>
 
-            <div v-if="categorySkins == null || categorySkins.length === 0">
-              <div class="no_items_message">
-                <div class="shop_section_buy_items_item_buy shop_section_skins_item_buy disabled">
-                  <button>
-                    <div class="shop_section_buy_items_item_buy_button_info">
-                      <p>Skins not found!</p>
-                    </div>
-                  </button>
-                </div>
-                <div class="shop_section_buy_items_item_buy shop_section_skins_item_buy actived">
-                  <button id="go_to_shop">
-                    <div class="shop_section_buy_items_item_buy_button_info">
-                      <p>Go to shop</p>
-                    </div>
-                  </button>
+            <div v-if="!loaderStatusPage" class="">
+              <div v-if="categorySkins == null || categorySkins.length === 0">
+                <div class="no_items_message">
+                  <div class="shop_section_buy_items_item_buy shop_section_skins_item_buy disabled">
+                    <button>
+                      <div class="shop_section_buy_items_item_buy_button_info">
+                        <p>{{ localText[namePage][userDataSettings.language].pr_text_15 }}</p>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="shop_section_buy_items_item_buy shop_section_skins_item_buy actived">
+                    <RouterLink to="/shop">
+                      <button id="go_to_shop">
+                        <div class="shop_section_buy_items_item_buy_button_info">
+                          <p>{{ localText[namePage][userDataSettings.language].pr_text_16 }}</p>
+                        </div>
+                      </button>
+                    </RouterLink>
+                  </div>
                 </div>
               </div>
             </div>

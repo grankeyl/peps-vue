@@ -4,12 +4,31 @@
     max-width: 450px;
     width: 100%;
     height: 284px;
-    bottom: 0px;
     background: #12182E;
     border-radius: 20px 20px 0px 0px;
     visibility: visible;
     overflow: auto;
-    transition: 0.76s;
+    animation: modalAnimationActive 0.75s forwards;
+}
+
+@keyframes modalAnimationActive {
+    0% {
+        bottom: -400px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes modalAnimationNotActive {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: -400px;
+    }
 }
 
 .modal {
@@ -20,10 +39,10 @@
     height: 284px;
     background: #12182E;
     border-radius: 20px 20px 0px 0px;
-    bottom: -400px;
     visibility: hidden;
     overflow: hidden;
     transition: 0.76s;
+    animation: modalAnimationNotActive 0.75s forwards;
 }
 
 .modal_close_button {

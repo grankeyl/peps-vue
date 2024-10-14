@@ -1,0 +1,83 @@
+{
+	"1": {
+		"task_name": "Join Pep's EN",
+		"task_name_ru": "Вступить в Pep's EN",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/NWGjgtY/Peps-3.jpg",
+		"task_redirect": "https://t.me/PepsENG@-1002128815254",
+		"task_gift_type": "money",
+		"task_gift": 1500
+	},
+	"2": {
+		"task_name": "Join Pep's RU",
+		"task_name_ru": "Вступить в Pep's RU",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/NWGjgtY/Peps-3.jpg",
+		"task_redirect": "https://t.me/PepsRU@-1002146032263",
+		"task_gift_type": "money",
+		"task_gift": 1500
+	},
+	"3": {
+		"task_name": "Join Pep's Chat",
+		"task_name_ru": "Вступить в Pep's чат",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/VSh4tqk/image-1738.png",
+		"task_redirect": "https://t.me/PepsChat@-1002161420035",
+		"task_gift_type": "money",
+		"task_gift": 1000
+	},
+	"4": {
+		"task_name": "Join Pep's in X",
+		"task_name_ru": "Вступить в Pep's в X",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/gFBYcGm/image.png",
+		"task_redirect": "https://x.com/pepsgamebot",
+		"task_gift_type": "money",
+		"task_gift": 1000
+	},
+	"5": {
+		"task_name": "Join Pep's Instagram",
+		"task_name_ru": "Вступить в Pep's в Инсте",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/PYT3tpP/image.png",
+		"task_redirect": "https://instagram.com/pepsgamebot",
+		"task_gift_type": "money",
+		"task_gift": 1000
+	},
+	"6": {
+		"task_name": "Upgrade any to 2 lvl",
+		"task_name_ru": "Прокачай любой скин до 2 лвла",
+		"task_type": "upgrade:skin",
+		"task_photo": "https://i.ibb.co/cYXMjTh/Frame-1171275891.png",
+		"task_redirect": "/upgrades",
+		"task_gift_type": "money",
+		"task_gift": 1000
+	},
+	"7": {
+		"task_name": "Buy any skin in Shop",
+		"task_name_ru": "Купить любой скин в Магазине",
+		"task_type": "buy:skin",
+		"task_photo": "https://i.ibb.co/55snDgD/Group-437.png",
+		"task_redirect": "/shop",
+		"task_gift_type": "money",
+		"task_gift": 2000
+	},
+	"8": {
+		"task_name": "Join TWP",
+		"task_name_ru": "Вступить в TWP",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/djPwg5J/image.png",
+		"task_redirect": "https://t.me/twp_channel@-1001116975433",
+		"task_gift_type": "money",
+		"task_gift": 1500
+	},
+	"9": {
+		"task_name": "Join Peperonl",
+		"task_name_ru": "Вступить в Peperonl",
+		"task_type": "None",
+		"task_photo": "https://i.ibb.co/JydJB6f/image-1737-1.png",
+		"task_redirect": "https://t.me/peperonlpizza@-1002485299687",
+		"task_gift_type": "money",
+		"task_gift": 1500
+	}
+}

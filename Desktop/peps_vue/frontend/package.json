@@ -13,11 +13,19 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@coreui/coreui": "^5.1.2",
+    "@coreui/vue": "^5.3.0",
     "@rive-app/canvas": "^2.20.0",
     "axios": "^1.7.5",
+    "bootstrap": "^5.3.3",
+    "coreui": "^0.4.2-alpha2",
+    "flowbite": "^2.5.1",
+    "flowbite-vue": "^0.1.6",
+    "fs": "^0.0.1-security",
     "moment": "^2.30.1",
     "pinia": "^2.1.7",
     "rive-js": "^0.7.33",
+    "swiper": "^11.1.12",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

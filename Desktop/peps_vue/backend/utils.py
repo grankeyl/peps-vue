@@ -1,8 +1,21 @@
 from datetime import datetime
-import json
+import json, random
 
 def get_now_date():
     return datetime.now().strftime("%d-%m-%y %H:%M:%S")
+
+def get_now_date_without_time():
+    return datetime.now().strftime("%d-%m-%y")
+
+def generate_referal_key() -> str:
+    chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890'
+    key = ""
+
+    for _ in range(9):
+        key += random.choice(chars)
+
+    return str(key)
+
 
 class Skin:
     
@@ -13,7 +26,7 @@ class Skin:
         self.__data = None
 
     def __get_category(self):
-        with open('./../skinsArray.json') as json_file:
+        with open('./../skinsArray.json', 'r', encoding='utf-8') as json_file:
             self.__data = json.load(json_file)
         
         for category, items in self.__data.items():

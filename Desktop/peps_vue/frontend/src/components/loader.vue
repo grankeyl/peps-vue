@@ -31,7 +31,7 @@
 .visit {
   width: 100%;
   height: 100%;
-  background: #12182e;
+  background: transparent
 }
 
 .loader-container {
@@ -50,7 +50,7 @@
   animation: spin 1.45s linear infinite;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
 }
 
 @keyframes spin {

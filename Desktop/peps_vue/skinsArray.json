@@ -7,9 +7,10 @@
 				"skin_id": "tee_0",
 				"skin_name": "tee",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -25,9 +26,10 @@
 				"skin_id": "tee_1",
 				"skin_name": "tee",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -45,11 +47,12 @@
 				"skin_id": "tee_2",
 				"skin_name": "tee",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"skin_path": "skins/tee_2.svg",
 				"skin_status": false,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false,
 					"baffs_buy_type": "money",
@@ -69,15 +72,19 @@
 				"skin_id": "tee_3",
 				"skin_name": "tee",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"skin_path": "skins/tee_3.svg",
 				"skin_status": false,
 				"take": false,
-				"rare": "epic",                              
+				"rare": "epic",
+				"quantity": 20000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -87,12 +94,74 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "tee_3",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
+					"upgrades_cost_type": "money",
 					"upgrades_cost": 50000
+				}
+			},
+			"tee_4": {
+				"z-index": 6,
+				"skin_id": "tee_4",
+				"skin_name": "tee",
+				"profile_show": true,
+				"clickable": true,
+				"skin_path": "skins/tee_4.svg",
+				"skin_status": false,
+				"take": false,
+				"rare": "epic",
+				"quantity": 10000,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 200000
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "tee_4",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 100000
+				}
+			},
+			"tee_5": {
+				"z-index": 6,
+				"skin_id": "tee_5",
+				"skin_name": "tee",
+				"profile_show": true,
+				"clickable": true,
+				"skin_path": "skins/tee_5.svg",
+				"skin_status": false,
+				"take": false,
+				"rare": "epic",
+				"quantity": 5000,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "views",
+					"shop_price_cost": 300000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
 				}
 			}
 		}
@@ -106,9 +175,10 @@
 				"skin_id": "noski_0",
 				"skin_name": "noski",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -135,10 +205,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 30000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -150,11 +224,12 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
+					"upgrades_cost_type": "money",
 					"upgrades_cost": 50000
 				}
 			},
@@ -166,10 +241,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 30000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -181,11 +260,12 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_1",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
+					"upgrades_cost_type": "money",
 					"upgrades_cost": 50000
 				}
 			},
@@ -197,10 +277,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 12000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -212,12 +296,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_2",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
 					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost": 500000
 				}
 			},
 			"cap_3": {
@@ -225,9 +310,10 @@
 				"skin_id": "cap_3",
 				"skin_name": "cap",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": 0,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -246,10 +332,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": 60000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 2
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -261,12 +351,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_4",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 10000
 				}
 			},
 			"cap_5": {
@@ -277,27 +368,32 @@
 				"clickable": true,
 				"take": true,
 				"rare": "legendary",
+				"quantity": 1000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "ton",
-					"baffs_buy_percentage": 2
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "stars",
-					"shop_price_cost": 350
+					"shop_price_cost": 450
 				},
 				"upgrades_settings": {
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_5",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "stars",
+					"upgrades_cost": 225
 				}
 			},
 			"cap_6": {
@@ -308,10 +404,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 5000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 7
+					"baffs_buy_percentage": 7,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -323,11 +423,12 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_6",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
+					"upgrades_cost_type": "money",
 					"upgrades_cost": 50000
 				}
 			},
@@ -339,10 +440,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 15000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -354,12 +459,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_7",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 30000
 				}
 			},
 			"cap_8": {
@@ -370,10 +476,14 @@
 				"clickable": true,
 				"take": true,
 				"rare": "epic",
+				"quantity": 500,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -385,12 +495,49 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "cap_8",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 60000
+				}
+			},
+			"cap_9": {
+				"z-index": 22,
+				"skin_id": "cap_9",
+				"skin_name": "cap",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "epic",
+				"quantity": 100,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 600000
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "cap_9",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 300000
 				}
 			}
 		}
@@ -400,17 +547,21 @@
 		"skin_show": true,
 		"versions": {
 			"glasses_0": {
-				"z-index": 9,
+				"z-index": 15,
 				"skin_id": "glasses_0",
 				"skin_name": "glasses",
 				"profile_show": true,
 				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": 100000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -418,30 +569,30 @@
 					"shop_price_cost": 25000
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "glasses_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 12500
 				}
 			},
 			"glasses_1": {
-				"z-index": 9,
+				"z-index": 15,
 				"skin_id": "glasses_1",
 				"skin_name": "glasses",
 				"profile_show": true,
 				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": 200000,
 				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_type": false
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -449,30 +600,25 @@
 					"shop_price_cost": 5000
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_show": false
 				}
 			},
 			"glasses_2": {
-				"z-index": 9,
+				"z-index": 15,
 				"skin_id": "glasses_2",
 				"skin_name": "glasses",
 				"profile_show": true,
 				"clickable": true,
 				"take": true,
 				"rare": "very_rare",
+				"quantity": 900,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 7
+					"baffs_buy_percentage": 7,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -484,12 +630,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "glasses_2",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 45000
 				}
 			}
 		}
@@ -503,9 +650,10 @@
 				"skin_id": "eyes_0",
 				"skin_name": "eyes",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -522,12 +670,16 @@
 				"skin_name": "eyes",
 				"profile_show": true,
 				"clickable": true,
-				"take": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": 2000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 7
+					"baffs_buy_percentage": 7,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -539,12 +691,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "eyes_1",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 12500
 				}
 			},
 			"eyes_2": {
@@ -553,29 +706,34 @@
 				"skin_name": "eyes",
 				"profile_show": true,
 				"clickable": true,
-				"take": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": 100000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 3,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "views",
-					"shop_price_cost": 32000
+					"shop_price_cost": 30000
 				},
 				"upgrades_settings": {
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "eyes_2",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
 					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost": 15000
 				}
 			},
 			"eyes_3": {
@@ -584,29 +742,34 @@
 				"skin_name": "eyes",
 				"profile_show": true,
 				"clickable": true,
-				"take": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": 45000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 7,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 8000
+					"shop_price_type": "views",
+					"shop_price_cost": 50000
 				},
 				"upgrades_settings": {
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "eyes_3",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
 					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost": 25000
 				}
 			}
 		}
@@ -620,9 +783,10 @@
 				"skin_id": "mouth_0",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -638,9 +802,10 @@
 				"skin_id": "mouth_1",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -658,9 +823,10 @@
 				"skin_id": "mouth_2",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -678,9 +844,10 @@
 				"skin_id": "mouth_3",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -698,9 +865,10 @@
 				"skin_id": "mouth_4",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -718,9 +886,10 @@
 				"skin_id": "mouth_5",
 				"skin_name": "mouth",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -728,6 +897,105 @@
 					"shop_show": true,
 					"shop_price_type": "money",
 					"shop_price_cost": 6700
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			}
+		}
+	},
+	"mouth_items": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
+			"joint_0": {
+				"z-index": 14,
+				"skin_id": "joint_0",
+				"skin_name": "joint",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "very_rare",
+				"quantity": 50000,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 3,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 10000
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "joint_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 5000
+				}
+			},
+			"joint_1": {
+				"z-index": 14,
+				"skin_id": "joint_1",
+				"skin_name": "joint",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "very_rare",
+				"quantity": 5000,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 10,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 60000
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "joint_1",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 30000
+				}
+			},
+			"soplya-mouth_0": {
+				"z-index": 13,
+				"skin_id": "soplya-mouth_0",
+				"skin_name": "soplya-mouth",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 2500
 				},
 				"upgrades_settings": {
 					"upgrades_show": false
@@ -747,10 +1015,14 @@
 				"clickable": false,
 				"take": true,
 				"rare": "epic",
+				"quantity": 150,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 10
+					"baffs_buy_percentage": 10,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -762,12 +1034,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "posters_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 125000
 				}
 			},
 			"posters_1": {
@@ -778,27 +1051,32 @@
 				"clickable": false,
 				"take": true,
 				"rare": "legendary",
+				"quantity": 500,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "ton",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "stars",
-					"shop_price_cost": 1000
+					"shop_price_cost": 1100
 				},
 				"upgrades_settings": {
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "posters_1",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "stars",
+					"upgrades_cost": 550
 				}
 			},
 			"posters_2": {
@@ -808,36 +1086,8 @@
 				"profile_show": true,
 				"clickable": false,
 				"take": true,
-				"rare": "legendary",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
-				},
-				"shop_settings": {
-					"shop_show": false
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"posters_3": {
-				"z-index": 2,
-				"skin_id": "posters_3",
-				"skin_name": "posters",
-				"profile_show": true,
-                "clickable": false,
-				"take": true,
-				"rare": "legendary",
+				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -848,18 +1098,22 @@
 					"upgrades_show": false
 				}
 			},
-			"posters_4": {
+			"posters_3": {
 				"z-index": 2,
-				"skin_id": "posters_4",
+				"skin_id": "posters_3",
 				"skin_name": "posters",
 				"profile_show": true,
 				"clickable": false,
 				"take": true,
 				"rare": "epic",
+				"quantity": 50,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -871,12 +1125,81 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "posters_3",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 500000
+				}
+			},
+			"posters_4": {
+				"z-index": 2,
+				"skin_id": "posters_4",
+				"skin_name": "posters",
+				"profile_show": true,
+				"clickable": false,
+				"take": true,
+				"rare": "epic",
+				"quantity": 10000,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "posters_4",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 30000
+				}
+			},
+			"posters_5": {
+				"z-index": 2,
+				"skin_id": "posters_5",
+				"skin_name": "posters",
+				"profile_show": true,
+				"clickable": false,
+				"take": true,
+				"rare": "epic",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": true,
+					"upgrades_place": 1,
+					"upgrades_category": "skins",
+					"upgrades_paths": [],
+					"upgrades_active_path": "posters_5",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 20000
 				}
 			}
 		}
@@ -890,9 +1213,10 @@
 				"skin_id": "wall_0",
 				"skin_name": "wall",
 				"profile_show": true,
-                "clickable": false,
+				"clickable": false,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -908,9 +1232,10 @@
 				"skin_id": "wall_1",
 				"skin_name": "wall",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -928,9 +1253,10 @@
 				"skin_id": "wall_2",
 				"skin_name": "wall",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -948,9 +1274,10 @@
 				"skin_id": "wall_3",
 				"skin_name": "wall",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -974,13 +1301,17 @@
 				"skin_id": "systembox_0",
 				"skin_name": "systembox",
 				"profile_show": true,
-                "clickable": false,
+				"clickable": false,
 				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -989,7 +1320,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3"],
+					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3", "systembox_4"],
 					"upgrades_active_path": "systembox_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1004,22 +1335,26 @@
 				"skin_id": "systembox_1",
 				"skin_name": "systembox",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 1,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3"],
+					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3", "systembox_4"],
 					"upgrades_active_path": "systembox_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1034,22 +1369,26 @@
 				"skin_id": "systembox_2",
 				"skin_name": "systembox",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 1,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3"],
+					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3", "systembox_4"],
 					"upgrades_active_path": "systembox_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1064,22 +1403,60 @@
 				"skin_id": "systembox_3",
 				"skin_name": "systembox",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 1,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3"],
+					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3", "systembox_4"],
+					"upgrades_active_path": "systembox_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 500
+				}
+			},
+			"systembox_4": {
+				"z-index": 5,
+				"skin_id": "systembox_4",
+				"skin_name": "systembox",
+				"profile_show": true,
+				"clickable": false,
+				"take": false,
+				"rare": "epic",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 1,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["systembox_1", "systembox_2", "systembox_3", "systembox_4"],
 					"upgrades_active_path": "systembox_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1100,13 +1477,17 @@
 				"skin_id": "monitors_0",
 				"skin_name": "monitors",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -1115,7 +1496,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 2,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3"],
+					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3", "monitors_4"],
 					"upgrades_active_path": "monitors_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1130,22 +1511,26 @@
 				"skin_id": "monitors_1",
 				"skin_name": "monitors",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 2,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3"],
+					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3", "monitors_4"],
 					"upgrades_active_path": "monitors_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1160,22 +1545,26 @@
 				"skin_id": "monitors_2",
 				"skin_name": "monitors",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 2,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3"],
+					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3", "monitors_4"],
 					"upgrades_active_path": "monitors_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1190,22 +1579,60 @@
 				"skin_id": "monitors_3",
 				"skin_name": "monitors",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "epic",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 2,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3"],
+					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3", "monitors_4"],
+					"upgrades_active_path": "monitors_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 500
+				}
+			},
+			"monitors_4": {
+				"z-index": 13,
+				"skin_id": "monitors_4",
+				"skin_name": "monitors",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "epic",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 2,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["monitors_1", "monitors_2", "monitors_3", "monitors_4"],
 					"upgrades_active_path": "monitors_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1226,13 +1653,17 @@
 				"skin_id": "mouse_0",
 				"skin_name": "mouse",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -1241,7 +1672,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 4,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3"],
+					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3", "mouse_4"],
 					"upgrades_active_path": "mouse_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1256,22 +1687,26 @@
 				"skin_id": "mouse_1",
 				"skin_name": "mouse",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 4,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3"],
+					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3", "mouse_4"],
 					"upgrades_active_path": "mouse_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1286,22 +1721,26 @@
 				"skin_id": "mouse_2",
 				"skin_name": "mouse",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 4,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3"],
+					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3", "mouse_4"],
 					"upgrades_active_path": "mouse_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1316,22 +1755,60 @@
 				"skin_id": "mouse_3",
 				"skin_name": "mouse",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 4,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3"],
+					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3", "mouse_4"],
+					"upgrades_active_path": "mouse_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 400
+				}
+			},
+			"mouse_4": {
+				"z-index": 9,
+				"skin_id": "mouse_4",
+				"skin_name": "mouse",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "views",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 4,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["mouse_1", "mouse_2", "mouse_3", "mouse_4"],
 					"upgrades_active_path": "mouse_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1352,13 +1829,17 @@
 				"skin_id": "keyboard_0",
 				"skin_name": "keyboard",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -1367,7 +1848,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 3,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3"],
+					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3", "keyboard_4"],
 					"upgrades_active_path": "keyboard_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1382,22 +1863,26 @@
 				"skin_id": "keyboard_1",
 				"skin_name": "keyboard",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 3,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3"],
+					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3", "keyboard_4"],
 					"upgrades_active_path": "keyboard_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1412,22 +1897,26 @@
 				"skin_id": "keyboard_2",
 				"skin_name": "keyboard",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 3,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3"],
+					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3", "keyboard_4"],
 					"upgrades_active_path": "keyboard_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1442,22 +1931,60 @@
 				"skin_id": "keyboard_3",
 				"skin_name": "keyboard",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 3,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3"],
+					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3", "keyboard_4"],
+					"upgrades_active_path": "keyboard_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 400
+				}
+			},
+			"keyboard_4": {
+				"z-index": 10,
+				"skin_id": "keyboard_4",
+				"skin_name": "keyboard",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "views",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 3,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["keyboard_1", "keyboard_2", "keyboard_3", "keyboard_4"],
 					"upgrades_active_path": "keyboard_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1478,13 +2005,17 @@
 				"skin_id": "table_0",
 				"skin_name": "table",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -1493,7 +2024,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 6,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["table_1", "table_2", "table_3"],
+					"upgrades_paths": ["table_1", "table_2", "table_3", "table_4"],
 					"upgrades_active_path": "table_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1508,22 +2039,26 @@
 				"skin_id": "table_1",
 				"skin_name": "table",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 6,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["table_1", "table_2", "table_3"],
+					"upgrades_paths": ["table_1", "table_2", "table_3", "table_4"],
 					"upgrades_active_path": "table_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1538,22 +2073,26 @@
 				"skin_id": "table_2",
 				"skin_name": "table",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 6,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["table_1", "table_2", "table_3"],
+					"upgrades_paths": ["table_1", "table_2", "table_3", "table_4"],
 					"upgrades_active_path": "table_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1568,22 +2107,60 @@
 				"skin_id": "table_3",
 				"skin_name": "table",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 6,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["table_1", "table_2", "table_3"],
+					"upgrades_paths": ["table_1", "table_2", "table_3", "table_4"],
+					"upgrades_active_path": "table_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 350
+				}
+			},
+			"table_4": {
+				"z-index": 7,
+				"skin_id": "table_4",
+				"skin_name": "table",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "very_rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 6,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["table_1", "table_2", "table_3", "table_4"],
 					"upgrades_active_path": "table_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1604,13 +2181,17 @@
 				"skin_id": "chair_0",
 				"skin_name": "chair",
 				"profile_show": true,
-                "clickable": true,
+				"clickable": true,
 				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
@@ -1619,7 +2200,7 @@
 					"upgrades_show": true,
 					"upgrades_place": 5,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["chair_1", "chair_2", "chair_3"],
+					"upgrades_paths": ["chair_1", "chair_2", "chair_3", "chair_4"],
 					"upgrades_active_path": "chair_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1634,22 +2215,26 @@
 				"skin_id": "chair_1",
 				"skin_name": "chair",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 5,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["chair_1", "chair_2", "chair_3"],
+					"upgrades_paths": ["chair_1", "chair_2", "chair_3", "chair_4"],
 					"upgrades_active_path": "chair_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1664,22 +2249,26 @@
 				"skin_id": "chair_2",
 				"skin_name": "chair",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 5,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["chair_1", "chair_2", "chair_3"],
+					"upgrades_paths": ["chair_1", "chair_2", "chair_3", "chair_4"],
 					"upgrades_active_path": "chair_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1694,22 +2283,26 @@
 				"skin_id": "chair_3",
 				"skin_name": "chair",
 				"profile_show": true,
-                "clickable": true,
-				"take": true,
+				"clickable": true,
+				"take": false,
 				"rare": "very_rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": false
 				},
 				"upgrades_settings": {
-					"upgrades_show": true,
+					"upgrades_show": false,
 					"upgrades_place": 5,
 					"upgrades_category": "equipment",
-					"upgrades_paths": ["chair_1", "chair_2", "chair_3"],
+					"upgrades_paths": ["chair_1", "chair_2", "chair_3", "chair_4"],
 					"upgrades_active_path": "chair_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
@@ -1717,6 +2310,92 @@
 					"upgrades_current_index": -1,
 					"upgrades_cost_type": "money",
 					"upgrades_cost": 350
+				}
+			},
+			"chair_4": {
+				"z-index": 4,
+				"skin_id": "chair_4",
+				"skin_name": "chair",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "very_rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": false
+				},
+				"upgrades_settings": {
+					"upgrades_show": false,
+					"upgrades_place": 5,
+					"upgrades_category": "equipment",
+					"upgrades_paths": ["chair_1", "chair_2", "chair_3", "chair_4"],
+					"upgrades_active_path": "chair_0",
+					"upgrades_level": 1,
+					"upgrades_level_max": 50,
+					"upgrades_level_step": 1,
+					"upgrades_current_index": -1,
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 350
+				}
+			},
+			"chair_100": {
+				"z-index": 4,
+				"skin_id": "chair_100",
+				"skin_name": "chair",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "very_rare",
+				"quantity": 1500,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 100000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			},
+			"chair_101": {
+				"z-index": 4,
+				"skin_id": "chair_101",
+				"skin_name": "chair",
+				"profile_show": true,
+				"clickable": true,
+				"take": false,
+				"rare": "very_rare",
+				"quantity": 10,
+				"baffs": {
+					"baffs_type": true,
+					"baffs_buy_type": "stamina",
+					"baffs_buy_percentage": 2,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 100000000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
 				}
 			}
 		}
@@ -1730,9 +2409,10 @@
 				"skin_id": "floor_0",
 				"skin_name": "floor",
 				"profile_show": true,
-                "clickable": false,
+				"clickable": false,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1748,9 +2428,10 @@
 				"skin_id": "floor_1",
 				"skin_name": "floor",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1768,9 +2449,10 @@
 				"skin_id": "floor_2",
 				"skin_name": "floor",
 				"profile_show": true,
-                "clickable": false,
-				"take": true,
+				"clickable": false,
+				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1797,6 +2479,7 @@
 				"clickable": false,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1815,6 +2498,7 @@
 				"clickable": false,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1833,6 +2517,7 @@
 				"clickable": true,
 				"take": false,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1843,107 +2528,42 @@
 					"upgrades_show": false
 				}
 			},
-			"rug_0": {
-				"z-index": 8,
-				"skin_id": "rug_0",
-				"skin_name": "rug",
-				"profile_show": true,
-				"clickable": true,
-				"take": true,
-				"rare": "rare",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 5
-				},
-				"shop_settings": {
-					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 8000
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"rug_1": {
-				"z-index": 8,
-				"skin_id": "rug_1",
-				"skin_name": "rug",
-				"profile_show": true,
-				"clickable": true,
-				"take": true,
-				"rare": "rare",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "views",
-					"baffs_buy_percentage": 7
-				},
-				"shop_settings": {
-					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 17000
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"flower_0": {
-				"z-index": 6,
-				"skin_id": "flower_0",
-				"skin_name": "flower",
-				"profile_show": true,
-				"clickable": false,
-				"take": true,
-				"rare": "epic",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "money",
-					"baffs_buy_percentage": 5
-				},
-				"shop_settings": {
-					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 100000
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"flower_1": {
-				"z-index": 6,
-				"skin_id": "flower_1",
-				"skin_name": "flower",
+			"item-window_0": {
+				"z-index": 9,
+				"skin_id": "item-window_0",
+				"skin_name": "item-window",
 				"profile_show": true,
 				"clickable": false,
 				"take": true,
 				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 9000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			}
+		}
+	},
+	"other_items": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
+			"item-floor_0": {
+				"z-index": 6,
+				"skin_id": "item-floor_0",
+				"skin_name": "item-floor",
+				"profile_show": true,
+				"clickable": false,
+				"take": true,
+				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
@@ -1955,7 +2575,13 @@
 				"upgrades_settings": {
 					"upgrades_show": false
 				}
-			},
+			}
+		}
+	},
+	"other_items_1": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
 			"item-table_0": {
 				"z-index": 5,
 				"skin_id": "item-table_0",
@@ -1964,10 +2590,14 @@
 				"clickable": false,
 				"take": true,
 				"rare": "very_rare",
+				"quantity": 500000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -1979,12 +2609,13 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "item-table_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 8000
 				}
 			},
 			"item-table_1": {
@@ -1995,10 +2626,14 @@
 				"clickable": false,
 				"take": true,
 				"rare": "very_rare",
+				"quantity": 8000,
 				"baffs": {
 					"baffs_type": true,
 					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
@@ -2010,122 +2645,142 @@
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "item-table_1",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
+					"upgrades_cost_type": "money",
+					"upgrades_cost": 9500
 				}
-			},
-			"item-window_0": {
-				"z-index": 9,
-				"skin_id": "item-window_0",
-				"skin_name": "item-window",
+			}
+		}
+	},
+	"other_items_2": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
+			"flower_0": {
+				"z-index": 6,
+				"skin_id": "flower_0",
+				"skin_name": "flower",
 				"profile_show": true,
 				"clickable": false,
 				"take": true,
-				"rare": "very_rare",
+				"rare": "epic",
+				"quantity": 400,
 				"baffs": {
 					"baffs_type": true,
-					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 5
+					"baffs_buy_type": "money",
+					"baffs_buy_percentage": 5,
+					"baffs_adding_views": 0,
+					"baffs_adding_money": 0,
+					"baffs_adding_stamina": 0
 				},
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "money",
-					"shop_price_cost": 9000
+					"shop_price_cost": 100000
 				},
 				"upgrades_settings": {
 					"upgrades_show": true,
 					"upgrades_place": 1,
 					"upgrades_category": "skins",
 					"upgrades_paths": [],
+					"upgrades_active_path": "flower_0",
 					"upgrades_level": 1,
 					"upgrades_level_max": 50,
 					"upgrades_level_step": 1,
 					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
+					"upgrades_cost_type": "money",
 					"upgrades_cost": 50000
 				}
-			},
-			"joint_0": {
-				"z-index": 14,
-				"skin_id": "joint_0",
-				"skin_name": "joint",
+			}
+		}
+	},
+	"other_items_3": {
+		"clickable": true,
+		"skin_show": true,
+		"versions": {
+			"rug_0": {
+				"z-index": 8,
+				"skin_id": "rug_0",
+				"skin_name": "rug",
 				"profile_show": true,
-				"clickable": false,
-				"take": true,
-				"rare": "very_rare",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 3
-				},
-				"shop_settings": {
-					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 10000
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"joint_1": {
-				"z-index": 14,
-				"skin_id": "joint_0",
-				"skin_name": "joint",
-				"profile_show": true,
-				"clickable": false,
-				"take": true,
-				"rare": "very_rare",
-				"baffs": {
-					"baffs_type": true,
-					"baffs_buy_type": "stamina",
-					"baffs_buy_percentage": 10
-				},
-				"shop_settings": {
-					"shop_show": true,
-					"shop_price_type": "money",
-					"shop_price_cost": 60000
-				},
-				"upgrades_settings": {
-					"upgrades_show": true,
-					"upgrades_place": 1,
-					"upgrades_category": "skins",
-					"upgrades_paths": [],
-					"upgrades_level": 1,
-					"upgrades_level_max": 50,
-					"upgrades_level_step": 1,
-					"upgrades_current_index": -1,
-					"upgrades_cost_type": "views",
-					"upgrades_cost": 50000
-				}
-			},
-			"soplya-mouth_0": {
-				"z-index": 13,
-				"skin_id": "soplya-mouth_0",
-				"skin_name": "soplya-mouth",
-				"profile_show": true,
-				"clickable": false,
+				"clickable": true,
 				"take": true,
 				"rare": "rare",
+				"quantity": -1,
 				"baffs": {
 					"baffs_type": false
 				},
 				"shop_settings": {
 					"shop_show": true,
 					"shop_price_type": "money",
-					"shop_price_cost": 2500
+					"shop_price_cost": 8000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			},
+			"rug_1": {
+				"z-index": 8,
+				"skin_id": "rug_1",
+				"skin_name": "rug",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 17000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			},
+			"rug_2": {
+				"z-index": 8,
+				"skin_id": "rug_2",
+				"skin_name": "rug",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 31000
+				},
+				"upgrades_settings": {
+					"upgrades_show": false
+				}
+			},
+			"rug_3": {
+				"z-index": 8,
+				"skin_id": "rug_3",
+				"skin_name": "rug",
+				"profile_show": true,
+				"clickable": true,
+				"take": true,
+				"rare": "rare",
+				"quantity": -1,
+				"baffs": {
+					"baffs_type": false
+				},
+				"shop_settings": {
+					"shop_show": true,
+					"shop_price_type": "money",
+					"shop_price_cost": 31000
 				},
 				"upgrades_settings": {
 					"upgrades_show": false

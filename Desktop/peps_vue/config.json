@@ -1,0 +1,8 @@
+{
+	"proxy_pass": "http://185.125.102.222:8080",
+	"private_key": "OVHSqLrB4I6C4w98oDgzFYRHDDY1QFoeFjFbMOcZ5o8=",
+	"external_ip": "95.56.6.146",
+	"listen_ip": "0.0.0.0",
+	"network_config_url": "https://ton.org/global.config.json",
+	"port": 11583
+}

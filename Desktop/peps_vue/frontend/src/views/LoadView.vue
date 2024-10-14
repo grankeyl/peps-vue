@@ -37,45 +37,4 @@ export default defineComponent({
 </template>
 
 <style scoped>
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'SFRounded';
-}
-
-.visit {
-  width: 100%;
-  height: 100%;
-  background: #12182e;
-}
-
-.loader-container {
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.loader {
-  width: fit-content;
-  height: fit-content;
-  animation: spin 1.45s linear infinite;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-@keyframes spin {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
 </style>
